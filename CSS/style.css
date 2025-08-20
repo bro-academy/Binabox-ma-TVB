@@ -1,64 +1,78 @@
 body {
-    font-family: 'Poppins', 'Arial', sans-serif;
+    font-family: 'Poppins', 'Arial', Verdana, Tahoma, 'Times New Roman', Times, serif, sans-serif;
     background-color: #0D0D15;
     color: #F8F7FF;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 a {
     text-decoration: none;
     color: #F8F7FF;
+    font-weight: 600;
 }
 
-h1,h2,h3,h4 {
-    font-family: 'Bakbak one', 'Verdana', sans-serif;
+a:hover{
+    text-decoration: underline;
 }
 
-h1 {
+h1,h2,h3,h4,h5 {
+    font-family: 'Bakbak one', 'Verdana', Tahoma, 'Times New Roman', Times, serif, sans-serif;
+}
+
+h1{
     font-size: 52px;
     line-height: 62px;
-    letter-spaci: -0.5px;
-    text-align: center;
+    letter-spacing: -0.5px;
+    text-align: left;
+    font-weight: 400;
 }
 
-h2,h3 {
+h2{
     font-size: 36px;
     line-height: 48px;
-    font-weight: 400;
     letter-spacing: -0.5px;
-    text-align: center;
 }
 
-h4 {
+h3{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+}
+h4{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5{
     font-size: 20px;
-    line-height: 28px;
-    font-weight: 500;
-}
-
-.header-logotype__title{
-    color: #0265DC;
+    line-height: 26px;
 }
 
 .header-navigation__list {
     list-style: none;
     display: flex;
-    gap: 40px;
-}
-
-.header-navigation__item {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
 }
 
-.header-navigation__item:hover {
-    border-bottom: 2px solid #0265DC;
+.header-navigation__item {
+    padding: 8px 20px 8px 20px;
+    gap: 8px;
+    border-bottom: 2px solid transparent;
+    display: block;
+}
+
+.header-navigation__item:hover{
+    border-bottom-color: #0265DC;
 }
 
 .header-discord__link {
     font-size: 18px;
     line-height: 28px;
-    width: 150px;
-    height: 48px;
+    font-weight: 600;
+    color: #f5f8fb;
     border: 2px solid #D0D7FB2B;
 }
 
@@ -68,10 +82,8 @@ h4 {
     border: none;
     background: #0265DC;
     color: #F5F8FB;
-}
-
-.main-banner__title {
-    text-align: left;
+    font-weight: 600; 
+    cursor: pointer;
 }
 
 .banner__title-highlited{
@@ -79,29 +91,33 @@ h4 {
 }
 
 .main-banner__subtitle {
-    text-align: left;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
+    color: #d9d9d9
 }
 
 .main-banner__count {
-    font-family: 'Bakbak one', 'Verdana', sans-serif;
+    font-family: 'Bakbak one', 'Verdana', Tahoma, 'Times New Roman', Times, serif, sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 62px;
     letter-spacing: -0.5px;
+    color:#ffffff66
 }
 
 .main-banner__info {
     font-size: 16px;
     line-height: 24px;
+    color: #eff5fad1
 }
 
 .main-banner__link {
     font-size: 18px;
     line-height: 28px;
     border: 2px solid #D0D7FB2B;
+    color: #f5f8fb;
+    font-weight: 600;
 }
 
 .main-banner__button {
@@ -110,34 +126,31 @@ h4 {
     border: none;
     background: #0265DC;
     color: #F5F8FB;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .catalog__title {
     font-size: 24px;
     line-height: 32px;
-    text-align: left;
+    letter-spacing: 0;
 }
 
 .catalog-section__link {
     font-size: 18px;
     line-height: 28px;
     border: 2px solid #D0D7FB2B;
+    font-weight: 600;
 }
 
 .catalog__switch-left,.catalog__switch-right {
     border: 2px solid #D0D7FB2B;
     background-color: #0D0D15;
     color: #F5F8FB;
-    
+    cursor: pointer;
 }
 
-.catalog__switch-left:hover {
-    border: 2px solid #0265DC;
-    background-color: #0265DC;
-    color: #0D0D15 ;
-}
-
-.catalog__switch-right:hover {
+.catalog__switch-left:hover,.catalog__switch-right:hover {
     border: 2px solid #0265DC;
     background-color: #0265DC;
     color: #0D0D15 ;
@@ -170,11 +183,12 @@ h4 {
 }
 
 .catalog-item__price {
-    text-align: left;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
 }
 
 .catalog-item__author{
-    text-align: left;
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
@@ -211,13 +225,16 @@ h4 {
     font-size: 14px;
     line-height: 20px;
     color: #EFF5FAD1;
+    font-weight: 600;
 }
 
 .blog-item__title{
-    text-align: left;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
 }
 
-.blog-item__subtitle{   
+.blog-item__subtitle{
     text-align: left;
     font-size: 16px;
     line-height: 24px;
@@ -230,7 +247,6 @@ h4 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    text-align: center;
 }
 
 .link__button{
@@ -245,6 +261,7 @@ h4 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
+    color: #eff5fad1
 }
 
 .about__list{
@@ -254,17 +271,11 @@ h4 {
 }
 
 .about-item__title{
-    text-align: left;
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
-}
-
-.about-item__subtitle{
-    text-align: left;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
+    letter-spacing: 0;
+    color: #f5f8fb;
 }
 
 .about__item{
@@ -279,6 +290,11 @@ h4 {
 
 .team__item{
     background-color: #1D1C28;
+    text-align: center;
+}
+
+.team-employee__photo{
+    border-radius: 56px;
 }
 
 .team-employee__name{
@@ -289,10 +305,6 @@ h4 {
 }
 
 .team-employee__position{
-    text-align: center;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
     color: #EFF5FAD1;
 }
 
@@ -303,10 +315,11 @@ h4 {
 }
 
 .faq__item{
-    background-color: #1A1925;
+    background-color: #1d1c28;
 }
 
 .faq-item__title{
+    font-family: 'Bakbak one', 'Verdana', Tahoma, 'Times New Roman', Times, serif, sans-serif;
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
@@ -323,12 +336,15 @@ h4 {
     color: #F5F8FB;
 }
 
-.footer__container{
+.footer{
     background-color: #1A1925;
 }
 
+.footer-navigation__title {
+    color: #f5f8fb;
+}
+
 .footer__subtitle{
-    text-align: left;
     font-size: 14px;
     line-height: 20px;
     color: #F5F8FB;
@@ -340,17 +356,15 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 0;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .footer-navigation__item{
-    text-align: left;
-    font-size: 12px;
-    line-height: 16px;
     color: #F5F8FB;
 }
 
 .footer-rights{
-    text-align: left;
     font-size: 14px;
     line-height: 20px;
     color: #F5F8FB;
@@ -369,22 +383,14 @@ h4 {
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.blog-navigation__item{
-    text-align: center;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    color: #F5F8FB;
+    color: #E7EEF7A8;
 }
 
-.blog-navigation__text{
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
-    color: #E7EEF7A8;
+.blog-navigation__item{
+    color: #F5F8FB;
 }
 
 .side-menu__section{
@@ -392,11 +398,8 @@ h4 {
 }
 
 .side-menu__title{
-    text-align: left;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-    color: #F5F8FB;
+    letter-spacing: 0; 
+    border-bottom: 1px solid rgba(191 197 238 / .12);
 }
 
 .side-categories__list{
@@ -404,12 +407,12 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
 }
 
 .categories__item{
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
     color: #F5F8FB;
 }
 
@@ -417,13 +420,11 @@ h4 {
     list-style: none;
     display: flex;
     gap: 10px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .tags__item{
-    font-size: 18px;
-    line-height: 28px;
-    width: 150px;
-    height: 48px;
     border: 2px solid #D0D7FB2B;
 }
 
@@ -431,11 +432,6 @@ h4 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: #F8F7FF;
-}
-
-.item__title{
-    text-align: left;
 }
 
 .blog-item__button{
@@ -444,44 +440,31 @@ h4 {
     border: none;
     background: #0265DC;
     color: #F5F8FB;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .item__author{
-    text-align: left;
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
     color: #EFF5FAD1;
 }
 
-.item__description,.item-description__list{
-    text-align: left;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #F8F7FF;
-}
-
 .item-description__sublist{
     list-style-image: url(Logo.png);
-    text-align: left;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #F8F7FF;
 }
 
 .blog-phrase{
     background-color: #002754;
-    text-align: left;
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
-    color: #F8F7FF;
     border-radius: 16px;
 }
 
 .phrase__main-content{
+    font-family: 'Bakbak one', 'Verdana', Tahoma, 'Times New Roman', Times, serif, sans-serif;
     text-align: left;
     font-size: 28px;
     line-height: 36px;
@@ -493,7 +476,6 @@ h4 {
 }
 
 .phrase__author{
-    font-weight: 600;
     color: #F8F7FF;
 }
 
@@ -501,21 +483,12 @@ h4 {
     list-style: none;
     display: flex;
     gap: 10px;
-    text-align: left;
     color: #FFFFFF;
 }
 
 .nft-info__title{
-    text-align: left;
     font-size: 28px;
     line-height: 36px;
-    font-weight: 400;
-}
-
-.nft-info__subtitle{
-    text-align: left;
-    font-size: 18px;
-    line-height: 28px;
     font-weight: 400;
 }
 
@@ -530,11 +503,8 @@ h4 {
 }
 
 .tags__title,.share__title{
-    text-align: left;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
-    color: #F8F7FF;
 }
 
 .share__list{
