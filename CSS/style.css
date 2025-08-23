@@ -24,7 +24,6 @@ h1{
     font-size: 52px;
     line-height: 62px;
     letter-spacing: -0.5px;
-    text-align: left;
     font-weight: 400;
 }
 
@@ -49,6 +48,10 @@ h5{
     line-height: 26px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .header-navigation__list {
     list-style: none;
     display: flex;
@@ -59,13 +62,13 @@ h5{
 
 .header-navigation__item {
     padding: 8px 20px 8px 20px;
-    gap: 8px;
     border-bottom: 2px solid transparent;
     display: block;
 }
 
 .header-navigation__item:hover{
     border-bottom-color: #0265DC;
+    text-decoration: none;
 }
 
 .header-discord__link {
@@ -465,7 +468,6 @@ h5{
 
 .phrase__main-content{
     font-family: 'Bakbak one', Arial, Verdana, Tahoma, sans-serif;
-    text-align: left;
     font-size: 28px;
     line-height: 36px;
     font-weight: 400;
