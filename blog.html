@@ -13,91 +13,144 @@
 <body>
 
     <header class="header">  
-        <a href="#">
-            <img class="header__logotype-image" src="images/Logo.png" width="36" height="40" alt="Binabox">
+        <a class="logotype" href="#">
+            <img class="logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
         </a>
-        <nav class="header__navigation">
-            <ul class="header__navigation-list">
-                <li><a class="header__navigation-item header__navigation-item--active" href="#">Home</a></li>
-                <li><a class="header__navigation-item" href="#">Blog</a></li>
-                <li><a class="header__navigation-item" href="#">Catalog</a></li>
-                <li><a class="header__navigation-item" href="#">Contact Us</a></li>
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation__item">
+                    <a class="navigation__link navigation__link--active" href="#">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Catalog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Contact Us</a>
+                </li>
             </ul>
         </nav>
-        <a class="header__discord-link button button--large" href="#">Discord</a>
-        <button class="header__login-button button button--large button--primary">Login</button>  
+        <a class="button button--large" href="#">Discord</a>
+        <button class="button button--large button--primary">Login</button>  
     </header>
+
     <main>
         <section class="blog-banner">
             <img class="blog-banner__image" src="images/Banner.png" width="1720" height="300" alt="Main Banner">
-            <h1 class="blog-banner__title text-center">Our blog</h1>
-            <ul class="blog-banner__breadcrumbs">
-                <li><a class="breadcrumbs__item" href="#">Home</a></li>
-                <li><a class="breadcrumbs__item" href="#">Our blog</a></li>
+            <h1 class="heading">Our blog</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Our blog</a>
+                </li class="breadcrumbs__item">
                 <li class="breadcrumbs__item breadcrumbs__item--active">The Basilsiks NTF</li>
             </ul>            
         </section> 
 
-        <aside class="side-menu">
+        <aside class="sidemenu">
             <section class="sidebar">
                 <h2 class="sidebar__title">Categories</h2>
-                <ul class="sidebar__categories-list">
-                    <li><a class="categories-list__item" href="#">Our blog (12)</a></li>
-                    <li><a class="categories-list__item" href="#">Metaverse (24)</a></li>
-                    <li><a class="categories-list__item" href="#">Gaming (24)</a></li>
-                    <li><a class="categories-list__item" href="#">Art (24)</a></li>
-                    <li><a class="categories-list__item" href="#">Robot (24)</a></li>
-                    <li><a class="categories-list__item" href="#">Lauchpad (24)</a></li>
-                    <li><a class="categories-list__item" href="#">Crypto (430)</a></li>
+                <ul class="categories">
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Our blog (12)</a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Metaverse (24)</a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Gaming (24)</a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Art (24)</a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Robot (24)</a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Lauchpad (24)</a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#">Crypto (430)</a>
+                    </li>
                 </ul>
             </section>
             <section class="sidebar">
                 <h2 class="sidebar__title">Tag</h2>
-                <ul class="sidebar__tags-list">
-                    <li><a class="tags-list__item button button--small" href="#">NFT</a></li>
-                    <li><a class="tags-list__item button button--small" href="#">ICO</a></li>
-                    <li><a class="tags-list__item button button--small" href="#">Robot</a></li>
-                    <li><a class="tags-list__item button button--small" href="#">Crypto</a></li>
-                    <li><a class="tags-list__item button button--small" href="#">Lauchpad</a></li>
-                    <li><a class="tags-list__item button button--small" href="#">Metaverse</a></li>
+                <ul class="tags">
+                    <li class="tags__item">
+                        <a class="button button--small" href="#">NFT</a>
+                    </li>
+                    <li class="tags__item">
+                        <a class="button button--small" href="#">ICO</a>
+                    </li>
+                    <li class="tags__item">
+                        <a class="button button--small" href="#">Robot</a>
+                    </li>
+                    <li class="tags__item">
+                        <a class="button button--small" href="#">Crypto</a>
+                    </li>
+                    <li class="tags__item">
+                        <a class="button button--small" href="#">Lauchpad</a>
+                    </li>
+                    <li class="tags__item">
+                        <a class="button button--small" href="#">Metaverse</a>
+                    </li>
                 </ul>
             </section>
         </aside>
         <article class="product">
-            <figure class="product__present">
-                <img class="product__image" src="images/Basilisk" width="1000" height="560" alt="Basilisk on the arena" />
-                <figcaption class="product__image-description">A Basilisk enters the arena — its emerald scales shimmer with encoded rage.</figcaption>
+            <figure class="product-form">
+                <img class="product-form__image" src="images/Basilisk" width="1000" height="560" alt="Basilisk on the arena" />
+                <figcaption class="product-form__description">A Basilisk enters the arena — its emerald scales shimmer with encoded rage.</figcaption>
             </figure>
             <h2 class="product__title">The Basilisks NFT</h2>
-            <button class="product__button button button--large button--primary">Gaming</button>
-            <p class="product__author">Tony Nguyen<time datetime="2022-07-20"> 20 Jun 2022</time></p>
+            <button class="button button--large button--primary">Gaming</button>
+            <p class="product__author">Tony Nguyen<time class="product__time" datetime="2022-07-20"> 20 Jun 2022</time></p>
             <p class="product__description">
                 Basilisks aren't just creatures — they're digital apex predators. Forged on the Ethereum chain and raised in a metaverse colosseum, they live to dominate, duel, and devour. Every one of them is an NFT with unique DNA, traits, and bloodlust.
             </p>
-            <ul class="product__description-list">
-                <li><p>In this game, your Basilisk is your warrior. You breed it. You name it. You train it. And when you're ready, you send it into the arena — not to play, but to survive.</p></li>
-                <li><p>Each NFT Basilisk has a set of traits, mutations, and skills, minted immutably on-chain. The arena? A fully 3D metaverse battleground with wagers, livestreams, and faction wars. Players don't just watch — they stake tokens, call hits, and climb leaderboards.</p></li>
-                <li><p>The game's AI learns from every move. If your Basilisk gets too strong — it becomes a target. If it dies? It's burned forever. If it wins? You earn crypto, glory, and power.</p></li>
+            <ul class="product-list">
+                <li class="product-list__item">
+                    <p class="product-list__text">In this game, your Basilisk is your warrior. You breed it. You name it. You train it. And when you're ready, you send it into the arena — not to play, but to survive.</p>
+                </li>
+                <li class="product-list__item">
+                    <p class="product-list__text">Each NFT Basilisk has a set of traits, mutations, and skills, minted immutably on-chain. The arena? A fully 3D metaverse battleground with wagers, livestreams, and faction wars. Players don't just watch — they stake tokens, call hits, and climb leaderboards.</p>
+                </li>
+                <li class="product-list__item">
+                    <p class="product-list__text">The game's AI learns from every move. If your Basilisk gets too strong — it becomes a target. If it dies? It's burned forever. If it wins? You earn crypto, glory, and power.</p>
+                </li>
             </ul>
-            <ul class="product__description-sublist">
-                <li><p>Unique DNA structure</p></li>
-                <li><p>PvP-enabled arenas</p></li>
-                <li><p>Permanent death mode</p></li>
-                <li><p>Metaverse integration</p></li>
+            <ul class="product-sublist">
+                <li class="product-sublist__item">
+                    <p class="product-sublist__text">Unique DNA structure</p>
+                </li>
+                <li class="product-sublist__item">
+                    <p class="product-sublist__text">PvP-enabled arenas</p>
+                </li>
+                <li class="product-sublist__item">
+                    <p class="product-sublist__text">Permanent death mode</p>
+                </li>
+                <li class="product-sublist__item">
+                    <p class="product-sublist__text">Metaverse integration</p>
+                </li>
             </ul>
             <blockquote class="comment">
                 <p class="comment__content">“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”</p>
-                <p><img class="comment-content__icon" src="images/Icon.png" width="16" height="16" alt="Icon"></p>
+                <img class="comment-content__icon" src="images/Icon.png" width="16" height="16" alt="Icon">
                 <p class="comment__details">8.5/10 <cite class="comment__author">Markout Corporation</cite></p>
             </blockquote>
             <div class="sub-product">
-                <figure class="sub-product__images">
-                    <img class="sub-product__first" src="images/BasilisksGen.png" width="1000" height="400" alt="Basilisks Gen-3">
-                    <figcaption class="sub-product__description">Close-up of a Gen-3 Basilisk. Eyes trained by code.</figcaption>
+                <figure class="product-form">
+                    <img class="product-form__image" src="images/BasilisksGen.png" width="1000" height="400" alt="Basilisks Gen-3">
+                    <figcaption class="product-form__text">Close-up of a Gen-3 Basilisk. Eyes trained by code.</figcaption>
                 </figure>
-                    <figure class="sub-product__images">
-                    <img class="sub-product__second" src="images/BasilisksBonded.png" width="1000" height="400" alt="Bonded Basilisks">
-                    <figcaption class="sub-product__description">A bonded Basilisk with its summoner. Loyalty is minted — not earned.</figcaption>
+                    <figure class="product-form">
+                    <img class="product-form__image" src="images/BasilisksBonded.png" width="1000" height="400" alt="Bonded Basilisks">
+                    <figcaption class="product-form__text">A bonded Basilisk with its summoner. Loyalty is minted — not earned.</figcaption>
                 </figure>
             </div>
             <div class="nft">
@@ -107,67 +160,105 @@
             </div>
             <div>
                 <h3 class="nft__title">NFT Avatar Generators</h3>
-                <p class="nft__subtitle">Looking to join the pack? Use the <a class="link__avatar-generator" href="#">NFT Avatar Generator</a> to craft your own beast — or grab a rare egg on the marketplace.You name it. You own it. You unleash it.</p>
+                <p class="nft__subtitle">Looking to join the pack? Use the <a class="nft__avatar-generator" href="#">NFT Avatar Generator</a> to craft your own beast — or grab a rare egg on the marketplace.You name it. You own it. You unleash it.</p>
             </div>
-            <footer class="item__footer">
-                <p class="tags__title">Tags:</p>
-                <ul class="tags__list">
-                    <li>
+            <footer class="product-footer">
+                <p class="product-footer__text">Tags:</p>
+                <ul class="product-footer__list">
+                    <li class="product-footer__item">
                         <a class="tags__item button button--small" href="#">NFT</a>
                     </li>
-                    <li>
+                    <li class="product-footer__item">
                         <a class="tags__item button button--small" href="#">Metaverse</a>
                     </li>
-                    <li>
+                    <li class="product-footer__item">
                         <a class="tags__item button button--small" href="#">Crypto</a>
                     </li>
                 </ul>
 
-                <p class="share__title">Share:</p>
-                <ul class="share__list">
-                    <li>
+                <p class="product-footer__subtext">Share:</p>
+                <ul class="product-footer__sublist">
+                    <li class="product-footer__item">
                         <a class="share-list__link button buttom--small" href="#"><img  src="images/Twiter.png" width="16" height="16" alt="Twiter Icon"></a>
                     </li>
-                    <li>
+                    <li class="product-footer__item">
                         <a class="share-list__link button buttom--small" href="#"><img src="images/Facebook.png" width="16" height="16" alt="Facebook Icon"></a>
                     </li>
-                    <li>
+                    <li class="product-footer__item">
                         <a class="share-list__link button buttom--small" href="#"><img src="images/Instagram.png" width="16" height="16" alt="Telegram Icon"></a>
                     </li>
                 </ul>
             </footer>
         </article>
-
-
     </main>
 
-    <footer class="footer">
-        <div class="footer__content">
-            <a href="#">
-                <img class="header-logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
+    <footer class="footer-section">
+        <div class="footer">
+            <a class="logotype" href="#">
+                <img class="logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
             </a>
-            <p class="footer__subtitle">We are the best way to check the rarity of NFT collection.</p>
-            <nav class="footer__navigation">
-                <strong class="footer-navigation__title">Navigation</strong>
-                <ul class="footer__navigation-list">
-                    <li><a class="footer-navigation__item" href="#">Home</a></li>
-                    <li><a class="footer-navigation__item" href="#">Blog</a></li>
-                    <li><a class="footer-navigation__item" href="#">Catalog</a></li>
-                    <li><a class="footer-navigation__item" href="#">Contact Us</a></li>
-                    <li><a class="footer-navigation__item" href="#">Terms Conditions</a></li>
-                    <li><a class="footer-navigation__item" href="#">Privacy Policy</a></li>
-                    <li><a class="footer-navigation__item" href="#">Whitepaper</a></li>
-                    <li><a class="footer-navigation__item" href="#">Help Center</a></li>
+            <p class="footer__titile">We are the best way to check the rarity of NFT collection.</p>
+            <nav class="sitemap">
+                <strong class="sitemap__title">Navigation</strong>
+                <ul class="sitemap-list">
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Home</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Blog</a>
+                    </li>
+                    <li class="sitemap__item"> 
+                        <a class="sitemap__link" href="#">Catalog</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Contact Us</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Terms Conditions</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Whitepaper</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Help Center</a>
+                    </li>
                 </ul>
             </nav>
-            <p class="footer-rights">BINABOX 2025 - ALL rights reserved</p>
-            <ul class="footer__social-links">
-                <li><a class="social__link" href="#"><img src="images/Twiter.png" width="24" height="24" alt="Twiter Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Facebook.png" width="24" height="24" alt="Facebook Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Telegram.png" width="24" height="24" alt="Telegram Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Instagram.png" width="24" height="24" alt="Instagram Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Discord.png" width="24" height="24" alt="Discord Icon"></a></li>
+            <p class="footer__rights">BINABOX 2025 - ALL rights reserved</p>
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Discord.png" width="24" height="24" alt="Discord Icon">
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>

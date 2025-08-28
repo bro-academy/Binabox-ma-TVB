@@ -13,19 +13,27 @@
 <body>
 
     <header class="header">  
-        <a href="#">
-            <img class="header__logotype-image" src="images/Logo.png" width="36" height="40" alt="Binabox">
+        <a class="logotype" href="#">
+            <img class="logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
         </a>
-        <nav class="header__navigation">
-            <ul class="header__navigation-list">
-                <li><a class="header__navigation-item header__navigation-item--active" href="#">Home</a></li>
-                <li><a class="header__navigation-item" href="#">Blog</a></li>
-                <li><a class="header__navigation-item" href="#">Catalog</a></li>
-                <li><a class="header__navigation-item" href="#">Contact Us</a></li>
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation__item">
+                    <a class="navigation__link navigation__link--active" href="#">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Catalog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Contact Us</a>
+                </li>
             </ul>
         </nav>
-        <a class="header__discord-link button button--large" href="#">Discord</a>
-        <button class="header__login-button button button--large button--primary">Login</button>  
+        <a class="button button--large" href="#">Discord</a>
+        <button class="button button--large button--primary">Login</button>  
     </header>
 
     <main>
@@ -33,59 +41,59 @@
             <img class="banner__image" src="images/banner.img" width="530" height="630" alt="Main Banner">
             <h1 class="banner__title">WITH <span class="banner__title--highlited">BINABOX</span> EXPLORE NFT COLLECTION</h1>
             <p class="banner__subtitle">We are  the best way to check the rarity of NFT collection</p> 
-            <dl>
-                <dt class="banner-subtitle__count">2240+</dt>
-                <dd class="banner-subtitle__info">Total items</dd>
-                <dt class="banner-subtitle__count">1000+</dt>
-                <dd class="banner-subtitle__info">Profiles whitelisted</dd>
+            <dl class="banner-content">
+                <dt class="banner-content__count">2240+</dt>
+                <dd class="banner-content__info">Total items</dd>
+                <dt class="banner-content__count">1000+</dt>
+                <dd class="banner-content__info">Profiles whitelisted</dd>
             </dl>
-            <a href="#" class="banner__link button button--large button--primary">Connect wallet</a>
-            <button class="banner__button button button--large">Whitelisted now</button>            
+            <a href="#" class="button button--large button--primary">Connect wallet</a>
+            <button class="button button--large">Whitelisted now</button>            
         </section> 
 
-        <section class="catalog">
-            <h2 class="catalog__title">catalog</h2>
-            <a class="catalog__link button button--large" href="#">See All</a> 
-            <button class="button--prev button button--large"><</button>
-            <button class="button--next button button--large">></button>
-            <div class="catalog__card">
-                <ul class="card__list">
-                    <li>
-                        <article class="card__item">
+        <section class="catalog-section">
+            <h2 class="catalog-section__title">catalog</h2>
+            <a class="button button--large" href="#">See All</a> 
+            <button class="button button--large button--switch"><</button>
+            <button class="button button--large button--switch">></button>
+            <div class="catalog">
+                <ul class="catalog-list">
+                    <li class="catalog-list__item">
+                        <article class="card">
                             <img class="card__image" src="images/A.jpg" width="250" height="320" alt="Art Skeleton">
-                            <span class="card__label label">New</span>
+                            <span class="label">New</span>
                             <h3 class="card__price">$1990</h3>
                             <p class="card__author">Echo of Bones</p>
                         </article>
                     </li>
-                    <li>
-                        <article class="card__item">        
+                    <li class="catalog-list__item">
+                        <article class="card">        
                             <img class="card__image" src="images/B.png" width="250" height="320" alt="Art Cat">
-                            <span class="card__label label">New</span>
+                            <span class="label">New</span>
                             <h3 class="card__price">$299.99</h3>
                             <p class="card__author">Nyx the Watcher</p>
                         </article>
                     </li>
-                    <li>       
-                        <article class="card__item">       
+                    <li  class="catalog-list__item">       
+                        <article class="card">       
                             <img class="card__image" src="images/C.jpg" width="250" height="320" alt="Art Blade">
-                            <span class="card__label label label--sold">Sold out</span>
+                            <span class="label label--sold">Sold out</span>
                             <h3 class="card__price">$20</h3>
                             <p class="card__author">Blade of Silence</p>
                         </article> 
                     </li>
-                    <li>     
-                        <article class="card__item">        
+                    <li class="catalog-list__item">     
+                        <article class="card">        
                             <img class="card__image" src="images/D.png" width="250" height="320" alt="Art Core">
-                            <span class="card__label label">New</span>
+                            <span class="label">New</span>
                             <h3 class="card__price">$1,000,000</h3>
                             <p class="card__author">Data Core: Alpha</p>
                         </article>
                     </li>
-                    <li>    
-                        <article class="caed__item">       
+                    <li class="catalog-list__item">    
+                        <article class="card">       
                             <img class="card__image" src="images/E.png" width="250" height="320" alt="Art Signal">
-                            <span class="card__label label">New</span>
+                            <span class="label">New</span>
                             <h3 class="card__price">$199.5</h3>
                             <p class="card__author">Phantom Console</p>
                         </article>
@@ -94,68 +102,68 @@
             </div>          
         </section>
 
-        <section class="blog">
-            <h2 class="blog__title text-center">Our blog</h2> 
-            <div class="blog__content">
+        <section class="blog-section">
+            <h2 class="heading">Our blog</h2> 
+            <div class="blog">
                 <ul class="blog__list">
-                    <li>
-                        <article class="blog__card">
-                            <img class="blog-card__image" src="images/EE.png" width="740" height="660" alt="Art Woman">
-                            <span class="blog-card__label label">NFT</span>
-                            <p class="blog-card__info">NOVA RIVEN<time datetime="2024-01-04"> 04 Dec 2022</time></p>
-                            <h3 class="blog-card__title">Neural Drift</h3>
-                            <p class="blog-card__subtitle">I woke up inside the void. My body stayed in the past — only thoughts were allowed through the wires."</p>
-                            <a class="blog-card__link button" href="#">Read more ></a>
+                    <li class="blog__item">
+                        <article class="art">
+                            <img class="art__image" src="images/EE.png" width="740" height="660" alt="Art Woman">
+                            <span class="label">NFT</span>
+                            <p class="art__info">NOVA RIVEN<time datetime="2024-01-04"> 04 Dec 2022</time></p>
+                            <h3 class="art__title">Neural Drift</h3>
+                            <p class="art__subtitle">I woke up inside the void. My body stayed in the past — only thoughts were allowed through the wires."</p>
+                            <a class="button" href="#">Read more ></a>
                         </article>
                     </li>
-                    <li> 
-                         <article class="blog__card">        
-                            <img class="blog-card__image" src="images/H.png" width="740" height="200" alt="Art Deadframe">
-                            <span class="blog-card__label label">DROP</span>
-                            <p class="blog-card__info">Kairo Null<time datetime="2024-01-06"> 06 Dec 2022</time></p>
-                            <h3 class="blog-card__title">Deadframe</h3>
-                            <p class="blog-card__subtitle">He just stood there, waiting. Not for a person — for a signal. Like the memory of the network took shape.</p>
-                            <a class="blog-card__link button" href="#">Read more ></a>
+                    <li class="blog__item"> 
+                         <article class="art">        
+                            <img class="art__image" src="images/H.png" width="740" height="200" alt="Art Deadframe">
+                            <span class="label">DROP</span>
+                            <p class="art__info">Kairo Null<time datetime="2024-01-06"> 06 Dec 2022</time></p>
+                            <h3 class="art__title">Deadframe</h3>
+                            <p class="art__subtitle">He just stood there, waiting. Not for a person — for a signal. Like the memory of the network took shape.</p>
+                            <a class="button" href="#">Read more ></a>
                         </article>
                     </li>
-                    <li>      
-                        <article class="blog__card">        
-                            <img class="blog-card__image" src="images/F.png" width="740" height="200" alt="Art Primal">
-                            <span class="blog-card__label label">RARE</span>
-                            <p class="blog-card__info">Dr. Wex Omega<time datetime="2024-01-08"> 08 Dec 2022</time></p>
-                            <h3 class="blog-card__title">Primal.exe</h3>
-                            <p class="blog-card__subtitle">We tried to resurrect the past. What we got was rage compressed into an algorithm.</p>
-                            <a class="blog-card__link button" href="#">Read more ></a>
+                    <li class="blog__item">      
+                        <article class="art">        
+                            <img class="art__image" src="images/F.png" width="740" height="200" alt="Art Primal">
+                            <span class="label">RARE</span>
+                            <p class="art__info">Dr. Wex Omega<time datetime="2024-01-08"> 08 Dec 2022</time></p>
+                            <h3 class="art__title">Primal.exe</h3>
+                            <p class="art__subtitle">We tried to resurrect the past. What we got was rage compressed into an algorithm.</p>
+                            <a class="button" href="#">Read more ></a>
                         </article>
                     </li> 
-                    <li>    
-                        <article class="blog__card">       
-                            <img class="blog-card__image" src="images/I.png" width="740" height="200" alt="Art Panther">
-                            <span class="blog-card__label label">NFT</span>
-                            <p class="blog-card__info">Synthya Void<time datetime="2024-01-07"> 07 Dec 2022</time></p>
-                            <h3 class="blog-card__title">Glitch Panther</h3>
-                            <p class="blog-card__subtitle">Cats always knew more than they showed. Especially the ones that vanish into code.</p>
-                            <a class="blog-card__link button" href="#">Read more ></a>
+                    <li class="blog__item">    
+                        <article class="art">       
+                            <img class="art__image" src="images/I.png" width="740" height="200" alt="Art Panther">
+                            <span class="label">NFT</span>
+                            <p class="art__info">Synthya Void<time datetime="2024-01-07"> 07 Dec 2022</time></p>
+                            <h3 class="art__title">Glitch Panther</h3>
+                            <p class="art__subtitle">Cats always knew more than they showed. Especially the ones that vanish into code.</p>
+                            <a class="button" href="#">Read more ></a>
                         </article>
                     </li>
-                    <li>      
-                        <article class="blog__card">       
-                            <img class="blog-card__image" src="images/G.png" width="740" height="200" alt="Art Duck">
-                            <span class="blog-card__label label">NFT</span>
-                            <p class="blog-card__info">Tony Nguyen<time datetime="2024-05-06"> 06 Jun 2022</time></p>
-                            <h3 class="blog-card__title">White Protocol</h3>
-                            <p class="blog-card__subtitle">At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive.</p>
-                            <a class="blog-card__link button" href="#">Read more ></a>
+                    <li class="blog__item">      
+                        <article class="art">       
+                            <img class="art__image" src="images/G.png" width="740" height="200" alt="Art Duck">
+                            <span class="label">NFT</span>
+                            <p class="art__info">Tony Nguyen<time datetime="2024-05-06"> 06 Jun 2022</time></p>
+                            <h3 class="art__title">White Protocol</h3>
+                            <p class="art__subtitle">At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive.</p>
+                            <a class="button" href="#">Read more ></a>
                         </article> 
                     </li> 
-                    <li>       
-                        <article class="blog__card">       
-                            <img class="blog-card__image" src="images/J.png" width="740" height="660" alt="Art Retrocore">
-                            <span class="blog-card__label label">ARTIFACT</span>
-                            <p class="blog-card__info">Echo Zero<time datetime="2024-01-09"> 09 Dec 2022</time></p>
-                            <h3 class="blog-card__title">Retrocore</h3>
-                            <p class="blog-card__subtitle">This console comes from a game no one remembers how to play. But it's still powered on.</p>
-                            <a class="blog-card__link button" href="#">Read more ></a>
+                    <li class="blog__item">       
+                        <article class="art">       
+                            <img class="art__image" src="images/J.png" width="740" height="660" alt="Art Retrocore">
+                            <span class="art__label label">ARTIFACT</span>
+                            <p class="art__info">Echo Zero<time datetime="2024-01-09"> 09 Dec 2022</time></p>
+                            <h3 class="art__title">Retrocore</h3>
+                            <p class="art__subtitle">This console comes from a game no one remembers how to play. But it's still powered on.</p>
+                            <a class="art__link button" href="#">Read more ></a>
                         </article>
                     </li>
                 </ul>
@@ -164,39 +172,39 @@
         </section>
 
         <section class="about">
-            <h2 class="about__title text-center">About us</h2>
+            <h2 class="heading">About us</h2>
             <p class="about__subtitle">We craft digital artifacts for those who live between worlds. 
             Our space is built for creators, collectors, and the quietly obsessed.</p>
             <ol class="about__list">
-                <li>
-                    <a class="about__link" href="#">
+                <li class="about__item">
+                    <a class="about-link" href="#">
                         <article class="about-link__item">
-                            <h3 class="about-item__title">Crystal Clear Quality</h3>
-                            <p class="about-item__subtitle">Every NFT we drop is razor-sharp, high-res, and glitch-free. Art that hits hard and stays clean.</p>
+                            <h3 class="about-link__title">Crystal Clear Quality</h3>
+                            <p class="about-link__subtitle">Every NFT we drop is razor-sharp, high-res, and glitch-free. Art that hits hard and stays clean.</p>
                         </article>
                     </a>
                 </li>
-                <li>
-                    <a class="about__link" href="#">
+                <li class="about__item">
+                    <a class="about-link" href="#">
                         <article class="about-link__item about-link__item--active">
-                            <h3 class="about-item__title">Curated Depth</h3>
-                            <p class="about-item__subtitle">Not just big — meaningful. Each piece tells a story, every collection builds a universe.</p> 
+                            <h3 class="about-link__title">Curated Depth</h3>
+                            <p class="about-link__subtitle">Not just big — meaningful. Each piece tells a story, every collection builds a universe.</p> 
                         </article>
                     </a>
                 </li>
-                <li>
-                    <a class="about__link" href="#">
-                        <article class="about__item">
-                            <h3 class="about-item__title">Rare Source Access</h3>
-                            <p class="about-item__subtitle">Early drops. Backstage peeks. Our members don't scroll — they unlock.</p> 
+                <li class="about__item">
+                    <a class="about-link" href="#">
+                        <article class="about-link__item">
+                            <h3 class="about-link__title">Rare Source Access</h3>
+                            <p class="about-link__subtitle">Early drops. Backstage peeks. Our members don't scroll — they unlock.</p> 
                         </article>
                     </a>
                 </li>
-                <li>
-                    <a class="about__link" href="#">
-                        <article class="about__item">
-                            <h3 class="about-item__title">Living Network</h3>
-                            <p class="about-item__subtitle">Our community isn't a list — it's a force. Artists, rebels, dreamers.</p> 
+                <li class="about__item">
+                    <a class="about-link" href="#">
+                        <article class="about-link__item">
+                            <h3 class="about-link__title">Living Network</h3>
+                            <p class="about-link__subtitle">Our community isn't a list — it's a force. Artists, rebels, dreamers.</p> 
                         </article>
                     </a>
                 </li> 
@@ -204,166 +212,165 @@
             <a class="button button--large" href="#">Read more</a>
         </section>
 
-        <section class="team">
-            <h2 class="team__title text-center">Our team</h2> 
+        <section class="team section">
+            <h2 class="heading">Our team</h2> 
             <ul class="team__list">
-                <li>
+                <li class="team__item">
                     <a class="team__link" href="#">
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O1.png" width="120" height="120" alt="Nova Employee">
-                            <h3 class="team-item__name">Nova Rive</h3>
-                            <p class="team-item__position">Creative Architect</p>
-
-                            <ul class="team-item__social">
-                                <li>
-                                    <img class="social__link" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O1.png" width="120" height="120" alt="Nova Employee">
+                            <h3 class="teammate__name">Nova Rive</h3>
+                            <p class="teammate__position">Creative Architect</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <img class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
                                 </li>
-                                <li>
-                                    <img class="social__link" src="images/Twitter.png" width="24" height="24" alt="Twitter Icon">
+                                <li class="social__item">
+                                    <img class="social__image" src="images/Twitter.png" width="24" height="24" alt="Twitter Icon">
                                 </li>
-                                <li>
-                                    <img class="social__link" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                                <li class="social__item">
+                                    <img class="social__image"class="social__image"class="social__image"class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
                                 </li>
-                                <li>
-                                    <img class="social__link" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                                <li class="social__item">
+                                    <img class="social__image"class="social__image"class="social__image"class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
                                 </li>
                             </ul>
                         </article>
                     </a>
                 </li>
-                <li>
+                <li class="team__item">
                     <a class="team__link" href="#">
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O6.png" width="120" height="120" alt="Echo Employee">
-                            <h3 class="team-item__name">Echo Zero</h3>
-                            <p class="team-item__position">Tech Whisperer</p>
-                            <ul class="team-item__social">
-                                <li>
-                                    <img class="social__link" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O6.png" width="120" height="120" alt="Echo Employee">
+                            <h3 class="teammate__name">Echo Zero</h3>
+                            <p class="teammate__position">Tech Whisperer</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <img class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
                                 </li>
-                                <li>
-                                    <img class="social__link" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                                <li class="social__item">
+                                    <img class="social__image"class="social__image"class="social__image"class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
                                 </li>
-                                <li>
-                                    <img class="social__link" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                                <li class="social__item">
+                                    <img class="social__image"class="social__image"class="social__image"class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
                                 </li>
-                                <li>
-                                    <img class="social__link" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                                <li class="social__item">
+                                    <img class="social__image"class="social__image"class="social__image"class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
                                 </li>
                             </ul>
                         </article>
                     </a>
                 </li>
-                <li>
+                <li class="team__item">
                     <a class="team__link" href="#">      
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O3.png" width="120" height="120" alt="Kairo Employee">
-                            <h3 class="team-item__name">Kairo Null</h3>
-                            <p class="team-item__position">Lore Engineer</p>
-                            <ul class="team-item__social">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O3.png" width="120" height="120" alt="Kairo Employee">
+                            <h3 class="teammate__name">Kairo Null</h3>
+                            <p class="teammate__position">Lore Engineer</p>
+                            <ul class="social">
                                 <li>
-                                    <img class="social__link" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                                    <img class="social__image"class="social__image"class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                                    <img class="social__image"class="social__image"class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                                    <img class="social__image"class="social__image"class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                                    <img class="social__image"class="social__image"class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
                                 </li>
                             </ul>
                         </article>
                     </a>
                 </li>
-                <li>
+                <li class="team__item">
                     <a class="team__link" href="#">        
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O4.png" width="120" height="120" alt="Wex Employee">
-                            <h3 class="team-item__name">Dr. Wex Omega</h3>
-                            <p class="team-item__position">Visual Disruptor</p>
-                            <ul class="team-item__social">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O4.png" width="120" height="120" alt="Wex Employee">
+                            <h3 class="teammate__name">Dr. Wex Omega</h3>
+                            <p class="teammate__position">Visual Disruptor</p>
+                            <ul class="social">
                                 <li>
-                                    <img class="social__link" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                                    <img class="social__image"class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                                    <img class="social__image"class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                                    <img class="social__image"class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                                    <img class="social__image"class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                                    <img class="social__image"class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
                                 </li>
                             </ul>
                         </article>
                     </a>
                 </li>
-                <li>
+                <li class="team__item"> 
                     <a class="team__link" href="#">       
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O5.png" width="120" height="120" alt="Synthya Employee">
-                            <h3 class="team-item__name">Synthya Void</h3>
-                            <p class="team-item__position">UX Seer</p>
-                            <ul class="team-item__social">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O5.png" width="120" height="120" alt="Synthya Employee">
+                            <h3 class="teammate__name">Synthya Void</h3>
+                            <p class="teammate__position">UX Seer</p>
+                            <ul class="social">
                                 <li>
-                                    <img class="social__link" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                                    <img class="social__image"class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
                                 </li>
                             </ul>
                         </article>
                     </a>
                 </li>
-                <li>
+                <li class="team__item">
                     <a class="team__link" href="#">      
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O6.png" width="120" height="120" alt="Mirlo Employee">
-                            <h3 class="team-item__name">Mirlo Drift</h3>
-                            <p class="team-item__position">Community Catalyst</p> 
-                            <ul class="team-item__social">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O6.png" width="120" height="120" alt="Mirlo Employee">
+                            <h3 class="teammate__name">Mirlo Drift</h3>
+                            <p class="teammate__position">Community Catalyst</p> 
+                            <ul class="social">
                                 <li>
-                                    <img class="social__link" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                                    <img class="social__image"class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                                    <img class="social__image"class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                                    <img class="social__image"class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                                    <img class="social__image"class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                                    <img class="social__image"class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
                                 </li>
                             </ul>
                         </article>
                     </a>
                 </li>
-                <li>
+                <li class="team__item">
                     <a class="team__link" href="#">      
-                        <article class="team__item">
-                            <img class="team-item__photo" src="images/O7.png" width="120" height="120" alt="Axon Employee">
-                            <h3 class="team-item__name">Axon Rune</h3>
-                            <p class="team-item__position">Security Ghost</p>
-                            <ul class="team-item__social">
+                        <article class="teammate">
+                            <img class="teammate__photo" src="images/O7.png" width="120" height="120" alt="Axon Employee">
+                            <h3 class="teammate__name">Axon Rune</h3>
+                            <p class="teammate__position">Security Ghost</p>
+                            <ul class="social">
                                 <li>
-                                    <img class="social__link" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                                    <img class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                                    <img class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                                    <img class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                                    <img class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
                                 </li>
                                 <li>
-                                    <img class="social__link" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                                    <img class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
                                 </li>
                             </ul>
                         </article>
@@ -372,55 +379,95 @@
             </ul>          
         </section>
 
-        <section class="faq">
-            <h2 class="faq__title text-center">FAQs</h2>
-            <details class="faq__item" open>
-                <summary class="faq-item__title">What are the NFTs?</summary>
-                <p class="faq-item__content"><a class="faq__item--highlited" href="#">NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified. No copies. No fakes. Just you and the chain.</p>
+        <section class="faq-section">
+            <h2 class="heading">FAQs</h2>
+            <details class="faq" open>
+                <summary class="faq__title">What are the NFTs?</summary>
+                <p class="faq__content"><a class="faq--highlited" href="#">NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified. No copies. No fakes. Just you and the chain.</p>
             </details>
-            <details class="faq__item">
-                <summary class="faq-item__title">How do I get NFTs?</summary>
-                <p class="faq-item__content">Lorem ipsum dolor sit amet.</p>
+            <details class="faq">
+                <summary class="faq__title">How do I get NFTs?</summary>
+                <p class="faq__content">Lorem ipsum dolor sit amet.</p>
             </details>
-            <details class="faq__item">
-                <summary class="faq-item__title">How can we buy your NFTs?</summary>
-                <p class="faq-item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <details class="faq">
+                <summary class="faq__title">How can we buy your NFTs?</summary>
+                <p class="faq__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </details>
-            <details class="faq__item">
-                <summary class="faq-item__title">Who are the team behind the project?</summary>
-                <p class="faq-item__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio.</p>
+            <details class="faq">
+                <summary class="faq__title">Who are the team behind the project?</summary>
+                <p class="faq__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio.</p>
             </details>
         </section>
 
     </main>
 
-    <footer class="footer">
-        <div class="footer__content">
-            <a href="#">
-                <img class="header-logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
+    <footer class="footer-section">
+        <div class="footer">
+            <a class="logotype" href="#">
+                <img class="logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
             </a>
-            <p class="footer__subtitle">We are the best way to check the rarity of NFT collection.</p>
-            <nav class="footer__navigation">
-                <strong class="footer-navigation__title">Navigation</strong>
-                <ul class="footer__navigation-list">
-                    <li><a class="footer-navigation__item" href="#">Home</a></li>
-                    <li><a class="footer-navigation__item" href="#">Blog</a></li>
-                    <li><a class="footer-navigation__item" href="#">Catalog</a></li>
-                    <li><a class="footer-navigation__item" href="#">Contact Us</a></li>
-                    <li><a class="footer-navigation__item" href="#">Terms Conditions</a></li>
-                    <li><a class="footer-navigation__item" href="#">Privacy Policy</a></li>
-                    <li><a class="footer-navigation__item" href="#">Whitepaper</a></li>
-                    <li><a class="footer-navigation__item" href="#">Help Center</a></li>
+            <p class="footer__title">We are the best way to check the rarity of NFT collection.</p>
+            <nav class="sitemap">
+                <strong class="sitemap__title">Navigation</strong>
+                <ul class="sitemap-list">
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Home</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Blog</a>
+                    </li>
+                    <li class="sitemap__item"> 
+                        <a class="sitemap__link" href="#">Catalog</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Contact Us</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Terms Conditions</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Whitepaper</a>
+                    </li>
+                    <li class="sitemap__item">
+                        <a class="sitemap__link" href="#">Help Center</a>
+                    </li>
                 </ul>
             </nav>
-            <p class="footer-rights">BINABOX 2025 - ALL rights reserved</p>
-            <ul class="footer__social-links">
-                <li><a class="social__link" href="#"><img src="images/Twiter.png" width="24" height="24" alt="Twiter Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Facebook.png" width="24" height="24" alt="Facebook Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Telegram.png" width="24" height="24" alt="Telegram Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Instagram.png" width="24" height="24" alt="Instagram Icon"></a></li>
-                <li><a class="social__link" href="#"><img src="images/Discord.png" width="24" height="24" alt="Discord Icon"></a></li>
+            <p class="footer__rights">BINABOX 2025 - ALL rights reserved</p>
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Twiter.png" width="24" height="24" alt="Twiter Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Facebook.png" width="24" height="24" alt="Facebook Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Telegram.png" width="24" height="24" alt="Telegram Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/LinkedIn.png" width="24" height="24" alt="LinkedIn Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Instagram.png" width="24" height="24" alt="Instagram Icon">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img class="social__image" src="images/Discord.png" width="24" height="24" alt="Discord Icon">
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
