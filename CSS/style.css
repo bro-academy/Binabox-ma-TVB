@@ -8,11 +8,10 @@ body {
 
 .button {
     border: 2px solid #D0D7FB2B;
-    font-size: 16px;
-    line-height: 24px;
     font-weight: 600;
     background-color: transparent;
     color: #F5F8FB;
+    cursor: pointer;
 }
 
 .button--large {
@@ -21,8 +20,8 @@ body {
 }
 
 .button--small {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .button--primary {
@@ -91,6 +90,10 @@ h5 {
 }
 
 .heading {
+    text-align: center;
+}
+
+.page-title { 
     text-align: center;
 }
 
@@ -168,7 +171,7 @@ h5 {
     color: #EFF5FAD1;
 }
 
-.blog__list {
+.blog-list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -338,7 +341,7 @@ h5 {
     color: #E7EEF7A8;
 }
 
-.sidebar {
+.subjects {
     background-color: #1D1C28;
 }
 
@@ -369,20 +372,20 @@ h5 {
     line-height: 20px;
 }
 
-.product-form__description {
+.image-form__description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
 }
 
-.product__author {
+.story__author {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
     color: #EFF5FAD1;
 }
 
-.product-sublist {
+.pointer-list {
     list-style-image: url(../images/Logo.png);
 }
 
@@ -409,35 +412,29 @@ h5 {
     color: #F8F7FF;
 }
 
-.product-form__text {
+.image-form__text {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     color: #FFFFFF;
 }
 
-.nft__title{
+.article__subtitle {
     font-size: 28px;
     line-height: 36px;
     font-weight: 400;
 }
 
-.nft__avatar-generator {
+.avatar-generator__link {
     color: #78BBFA;
 }
 
-.product-footer__list {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.product-footer__text, .product-footer__subtext {
+.story-footer__text {
     font-size: 16px;
     line-height: 24px;
 }
 
-.product-footer__sublist {
+.story-footer__sublist {
     list-style: none;
     display: flex;
     gap: 10px;
