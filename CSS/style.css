@@ -280,7 +280,7 @@ h5 {
     color: #F5F8FB;
 }
 
-.faq__--highlited {
+.faq__link {
     color: #0265DC;
 }
 
@@ -425,7 +425,7 @@ h5 {
     font-weight: 400;
 }
 
-.avatar-generator__link {
+.article__link {
     color: #78BBFA;
 }
 
