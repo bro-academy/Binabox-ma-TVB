@@ -419,13 +419,13 @@ h5 {
     color: #FFFFFF;
 }
 
-.article__subtitle {
+.story__subtitle {
     font-size: 28px;
     line-height: 36px;
     font-weight: 400;
 }
 
-.article__link {
+.story__link {
     color: #78BBFA;
 }
 
