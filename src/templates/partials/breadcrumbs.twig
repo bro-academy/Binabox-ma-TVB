@@ -1,0 +1,7 @@
+<li class="breadcrumbs__item">
+    {% if loop.last %}
+    <li class="breadcrumbs__item">{{ item.text }}</li>
+    {% else %}
+    <a class="breadcrumbs__link" href="{{ item.link }}">{{ item.text }}</a>
+    {% endif %}
+</li>

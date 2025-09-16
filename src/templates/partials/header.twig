@@ -1,23 +1,20 @@
 <header class="header">  
-    <a class="logotype" href="#">
-        <img class="logotype__image" src="images/Logo.png" width="36" height="40" alt="Binabox">
+    <a class="logotype" href="{{ common.logo_link }}">
+        <img class="logotype__image" src="{{ common.logo_src }}" width="24" height="24" alt="{{ common.logo_alt }}">
     </a>
     <nav class="navigation">
         <ul class="navigation-list">
+            {% for item in common.header.navigation %}
             <li class="navigation__item">
-                <a class="navigation__link navigation__link--active" href="#">Home</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Blog</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Catalog</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Contact Us</a>
-            </li>
+                <a href={{ item.link }} class="navigation__link
+                {% if item.link == page %}
+					navigation__link--active
+					{% endif %}">
+				{{ item.text }}</a>
+				</li>
+			{% endfor %}
         </ul>
     </nav>
-    <a class="button button--large" href="#">Discord</a>
-    <button class="button button--large button--primary">Login</button>  
+    <a class="button button--large" href="{{ common.header.discord.button_link }}">{{ common.header.discord.button_text }}</a>
+    <button class="button button--large button--primary">{{ common.header.autorisation.button_text }}</button>  
 </header>

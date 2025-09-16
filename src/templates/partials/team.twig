@@ -1,0 +1,8 @@
+<section class="team">
+    <h2 class="heading">{{ index.team.title }}</h2> 
+    <div class="team__list">
+        {% for item in index.team.list %}
+        {% include "/teammate.twig" %}
+        {% endfor %}
+    </div>          
+</section>

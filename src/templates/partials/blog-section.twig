@@ -1,0 +1,9 @@
+<section class="blog-section">
+    <h2 class="heading">{{ index.blog.title }}</h2> 
+    <div class="blog-list">
+        {% for item in index.blog.list %}
+        {% include "/art.twig" %}
+		{% endfor %}
+    </div>
+    <a class="button button--large" href="{{ index.general_link }}">{{ index.general_text }}</a>
+</section>

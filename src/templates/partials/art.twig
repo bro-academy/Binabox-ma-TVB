@@ -1,0 +1,11 @@
+<article class="art">
+    <img class="art__image" src="{{ item.image_src }}" width="740" height="660" alt="{{ item.image_alt }}">
+    <span class="label
+            {% if item.label == "ARTIFACT" %}
+	        art__label
+	        {% endif %}">{{ item.label }}</span>
+    <p class="art__info">{{ item.author }}<time datetime="{{ item.date }}"> {{ item.date_text}}</time></p>
+    <h3 class="art__title">{{ item.header }}</h3>
+    <p class="art__subtitle">{{ item.description }}</p>
+    <a class="button button--small" href="{{ item.link }}">Read more ></a>
+</article>

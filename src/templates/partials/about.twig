@@ -1,0 +1,17 @@
+<section class="about">
+    <h2 class="heading">{{ index.about.title }}</h2>
+    <p class="about__subtitle">{{ index.about.text }}</p>
+    <ol class="benefits">
+        {% for item in index.about.list %}
+        <li class="benefits__item">
+            <a class="benefits__link" href="{{ item.link }}">
+                <article class="benefits__card">
+                    <h3 class="benefits__title">{{ item.title }}</h3>
+                    <p class="benefits__subtitle">{{ item.description }}</p>
+                </article>
+            </a>
+        </li>
+        {% endfor %}
+    </ol>
+    <a class="button button--large" href="{{ index.general_link }}">{{ index.general_text }}</a>
+</section>

@@ -1,0 +1,10 @@
+<section class="subjects">
+    <h2 class="subjects__title">{{ blog.aside.tags.title }}</h2>
+    <ul class="tags">
+        {% for item in blog.aside.tags.list %}
+        <li class="tags__item">
+            <a class="button button--small" href="{{ item.link }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

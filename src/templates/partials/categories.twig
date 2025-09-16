@@ -1,0 +1,10 @@
+<section class="subjects">
+    <h2 class="subjects__title">{{ blog.aside.categories.title }}</h2>
+    <ul class="categories">
+        {% for item in blog.aside.categories.list %}
+        <li class="categories__item">
+            <a class="categories__link" href="{{ item.link }}">{{ item.text }}({{ item.count }})</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

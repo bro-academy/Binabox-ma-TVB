@@ -218,7 +218,7 @@ h5 {
     color: #eff5fad1
 }
 
-.about__list {
+.benefits {
     list-style: none;
     display: flex;
     gap: 40px;
@@ -232,7 +232,7 @@ h5 {
     color: #f5f8fb;
 }
 
-.about-link__item {
+.benefits__card {
     background-color: #1A1925;
 }
 
@@ -304,7 +304,7 @@ h5 {
     color: #F5F8FB;
 }
 
-.sitemap-list {
+.sitemap__list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -318,7 +318,7 @@ h5 {
     color: #F5F8FB;
 }
 
-.footer-rights {
+.footer__rights {
     font-size: 14px;
     line-height: 20px;
     color: #F5F8FB;
