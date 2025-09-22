@@ -1,7 +1,5 @@
 <section class="blog-banner">
     <img class="blog-banner__image" src="images/Banner.png" width="1720" height="300" alt="Main Banner">
     <h1 class="page-title">{{ blog.title }}</h1>
-	{% for item in blog.breadcrumbs %}
-    {% include '/breadcrumbs.twig' %}
-    {% endfor %}         
+    {% include '/breadcrumbs.twig' %}    
 </section> 

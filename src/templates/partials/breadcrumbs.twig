@@ -1,9 +1,15 @@
 <ul class="breadcrumbs">
-    <li class="breadcrumbs__item">
-        {% if loop.last %}
-        <li class="breadcrumbs__item">{{ item.text }}</li>
-        {% else %}
-        <a class="breadcrumbs__link" href="{{ item.link }}">{{ item.text }}</a>
-        {% endif %}
-    </li>
+    {% for item in blog.breadcrumbs %}
+        <li class="breadcrumbs__item">
+            {% if item.link is defined and item.link %}
+                <a href="{{ item.link }}" class="breadcrumbs__link">
+                    {{ item.text }}
+                </a>
+            {% else %}
+                <span class="breadcrumbs__text">
+                    {{ item.text }}
+                </span>
+            {% endif %}
+        </li>
+    {% endfor %}
 </ul>

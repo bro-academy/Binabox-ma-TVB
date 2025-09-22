@@ -382,19 +382,23 @@
         {
           "question": "What are the NFTs?",
           "link": "NFTs (non-fungible tokens)",
-          "answer": " are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified. No copies. No fakes. Just you and the chain."
+          "answer": " are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified. No copies. No fakes. Just you and the chain.",
+          "open": true
         },
         {
           "question": "How do i get NFTs?",
-          "answer": "lorem sdaas...."
+          "answer": "lorem sdaas....",
+          "open": false
         },
         {
           "question": "How can we buy your NFTs?",
-          "answer": "lorem sdaas...."
+          "answer": "lorem sdaas....",
+          "open": false
         },
         {
           "question": "Who are the team behind the project?",
-          "answer": "lorem13"
+          "answer": "lorem13",
+          "open": false
         }
       ]
     }
