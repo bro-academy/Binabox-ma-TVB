@@ -1,0 +1,14 @@
+<article class="teammate">
+    <img class="teammate__photo" src="{{ item.avatar_src }}" width="120" height="120" alt="{{ item.name }}e">
+    <h3 class="teammate__name">{{ item.name }}</h3>
+    <p class="teammate__position">{{ item.role }}</p>
+    <ul class="social">
+        {% for element in item.socials %}
+        <li class="social__item">
+            <a class="social__link" href="{{ element.link }}">
+                <img class="social__image" src="{{ element.icon_src }}" width="24" height="24" alt="{{ element.icon_alt }}">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</article>

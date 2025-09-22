@@ -1,0 +1,39 @@
+<article class="story">
+
+  {% include 'illustration.twig' %}
+  <h2 class="story__title">{{ blog.story.title }}</h2>
+  <button class="button button--large button--primary">{{ blog.story.category }}</button>
+  <p class="story__author">{{ blog.story.author }}<time class="story__time" datetime="{{ blog.article.date }}"> {{ blog.article.date_text }}</time></p>
+  <p class="story__description">{{ blog.story.description }}</p>
+
+  <ul class="article-page__list">
+    {% for item in blog.story.list %}
+      <li class="story-list__item">{{ item.text }}</li>
+    {% endfor %}
+  </ul>
+
+  <ul class="icon-list">
+    {% for item in blog.story.pointer_list %}
+      <li class="pointer-list__item">{{ item.text }}</li>
+    {% endfor %}
+  </ul>
+  {% include 'comment.twig' %}
+
+    {% for item in blog.story.illustration %}
+    {% include 'illustration.twig' %}
+    {% endfor %}
+  
+  	<h3 class="story__subtitle">{{ blog.story.story_subtitle }}</h3>
+
+	<p class="story__description">{{ blog.story.story_text1 }}</p>
+
+	<p class="story__description">{{ blog.story.story_text2 }}</p>
+
+	<h3 class="story__subtitle">{{ blog.story.story_subtitle2 }}</h3>
+
+	<p class="story__description">{{ blog.story.story_text3 }}</p>
+    
+    {% include 'story_footer.twig' %}
+
+</article>
+

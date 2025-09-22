@@ -1,0 +1,15 @@
+<ul class="breadcrumbs">
+    {% for item in blog.breadcrumbs %}
+        <li class="breadcrumbs__item">
+            {% if item.link is defined and item.link %}
+                <a href="{{ item.link }}" class="breadcrumbs__link">
+                    {{ item.text }}
+                </a>
+            {% else %}
+                <span class="breadcrumbs__text">
+                    {{ item.text }}
+                </span>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

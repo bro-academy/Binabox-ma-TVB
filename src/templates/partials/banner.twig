@@ -1,0 +1,13 @@
+<section class="banner">
+    <img class="banner__image" src="{{ index.banner.banner_image }}" width="530" height="630" alt="{{ banner_title }}">
+    <h1 class="banner__title">{{ index.banner.text_before }} <span class="banner__title--highlited">{{ index.banner.text_highlighted }}</span> {{ index.banner.text_after }}</h1>
+    <p class="banner__subtitle">{{ index.banner.banner_subtext }}</p> 
+    <dl class="banner-content">
+        {% for item in index.banner.content %}
+            <dt class="banner-content__count">{{ item.title }}</dt>
+            <dd class="banner-content__info">{{ item.description}}</dd>
+        {% endfor %}
+    </dl>
+    <a href="{{ index.banner.banner_button.link }}" class="button button--large button--primary">{{ index.banner.banner_button.link_text }}</a>
+    <button class="button button--large">{{ index.banner.banner_button.button_text }}</button>            
+</section> 

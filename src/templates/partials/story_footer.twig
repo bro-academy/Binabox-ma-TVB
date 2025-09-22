@@ -1,0 +1,19 @@
+<footer class="story-footer">
+    <p class="story-footer__text">{{ blog.story.footer.tags.title }}</p>
+    <ul class="tags">
+        {% for item in blog.story.footer.tags.list %}
+        <li class="tags__item">
+            <a class="button button--small" href="{{ item.link }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="story-footer__text">{{ blog.story.footer.share.title }}</p>
+    <ul class="social">
+    	{% for item in blog.story.footer.share.list %}
+        <li class="social__item">
+            <a class="button buttom--small" href="{{ item.link }}"><img  src="{{ item.icon_src }}" width="16" height="16" alt="{{ item.logo_alt }}"></a>
+        </li>
+        {% endfor %}
+    </ul>
+</footer>

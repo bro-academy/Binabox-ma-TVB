@@ -1,0 +1,13 @@
+{% set page="blog.html" %}
+
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% from 'src/templates/partials/ui/icon.twig' import icon %}
+
+{% block content %}
+
+  {% include 'src/templates/partials/blog-banner.twig' %}
+  {% include 'src/templates/partials/sidebar.twig' %}
+  {% include 'src/templates/partials/story.twig' %}
+
+{% endblock %}
