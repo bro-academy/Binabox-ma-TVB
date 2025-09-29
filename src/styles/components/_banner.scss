@@ -1,0 +1,25 @@
+.banner__title--highlited {
+    color: $accent-color;
+}
+
+.banner__subtitle {
+    font-weight: $fw-l;
+    font-size: $text-fs-l;
+    line-height: $lh-m;
+    color: $color-additional;
+}
+
+.banner-content__count {
+    font-family: $ff-secondary;
+    font-weight: $fw-s;
+    font-size: $header-fs-m;
+    line-height: $lh-xxxl;
+    letter-spacing: $ls-s;
+    color:$color-fivethly
+}
+
+.banner-content__info {
+    font-size: $text-fs-s;
+    line-height: $lh-s;
+    color: $color-secondary
+}

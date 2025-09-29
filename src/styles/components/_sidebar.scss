@@ -1,0 +1,29 @@
+.subjects {
+    background-color: $card-bg-color;
+}
+
+.sidebar__title {
+    border-bottom: 1px solid $border-color;
+}
+
+.categories {
+    list-style: $list-s;
+    display: $disp-f;
+    flex-direction: column;
+    gap: $gap1;
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    font-weight: $fw-l;
+}
+
+.categories__link {
+    color: $color-primary;
+}
+
+.tags {
+    list-style: $list-s;
+    display: $disp-f;
+    gap: $gap1;
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+}

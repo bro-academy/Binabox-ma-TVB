@@ -1,0 +1,22 @@
+.comment {
+    background-color: $blockquote-bg-color;
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    font-weight: $fw-l;
+    border-radius: $brd-r;
+}
+
+.comment__content {
+    font-family: $ff-secondary;
+    font-size: $text-fs-xxl;
+    line-height: $lh-xl;
+    font-weight: $fw-s;
+}
+
+.comment__details {
+    color: $color-secondary;
+}
+
+.comment__author {
+    color: $color-thirdly;
+}

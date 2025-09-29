@@ -1,0 +1,16 @@
+.card {
+    background-color: $card-bg-color;
+}
+
+.card__price {
+    font-size: $header-fs-s;
+    line-height: $lh-xxl;
+    letter-spacing: $ls-s;
+}
+
+.card__author {
+    font-size: $text-fs-l;
+    line-height: $lh-m;
+    font-weight: $fw-m;
+    color: $color-secondary;
+}

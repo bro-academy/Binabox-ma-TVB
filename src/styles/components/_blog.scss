@@ -1,0 +1,6 @@
+.blog-list {
+    list-style: $list-s;
+    display: $disp-g;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap1;
+}

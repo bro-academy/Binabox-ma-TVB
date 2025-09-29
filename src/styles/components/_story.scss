@@ -1,0 +1,38 @@
+
+.image-form__description, .image-form__text {
+    font-size: $text-fs-s;
+    line-height: $lh-s;
+    font-weight: $fw-m;
+}
+
+.story__author {
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    font-weight: $fw-l;
+    color: $color-secondary;
+}
+
+.pointer-list {
+    list-style-image: url(../images/Logo.png);
+}
+
+.story__subtitle {
+    font-size: $text-fs-xxl;
+    line-height: $lh-xl;
+    font-weight: $fw-s;
+}
+
+.story__link {
+    color: $link-color;
+}
+
+.story-footer__text {
+    font-size: $text-fs-s;
+    line-height: $lh-s;
+}
+
+.story-footer__sublist {
+    list-style: $list-s;
+    display: $disp-f;
+    gap: $gap1;
+}

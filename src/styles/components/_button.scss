@@ -1,0 +1,40 @@
+.button {
+    border: 2px solid $separator-color;
+    font-weight: $fw-l;
+    background-color: transparent;
+    color: $color-primary;
+    cursor: pointer;
+}
+
+.button--large {
+    font-size: $text-fs-m;
+    line-height: $lh-m;
+}
+
+.button--small {
+    font-size: $text-fs-s;
+    line-height: $lh-xxs;
+}
+
+.button--primary {
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+}
+
+.button--switch:hover {
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+    color: $body-bg-color;
+}
+
+.label {
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    font-weight: $fw-l;
+    color: $accent-color;
+    background-color: $color-primary;
+}
+.label--sold {
+    background-color: $negative-color;
+    color: $color-primary;
+}

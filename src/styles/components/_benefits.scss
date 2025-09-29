@@ -1,0 +1,16 @@
+.benefits {
+    list-style: $list-s;
+    display: $disp-f;
+    gap: $gap;
+}
+
+.benefits__title {
+    font-size: $text-fs-xl;
+    line-height: $lh-l;
+    font-weight: $fw-s;
+    color: $color-primary;
+}
+
+.benefits__card {
+    background-color: $card-bg-color-secondary;
+}

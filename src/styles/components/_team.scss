@@ -1,0 +1,31 @@
+.team__list {
+    list-style: $list-s;
+    display: $disp-f;
+    gap: $gap4;
+}
+
+.teammate {
+    background-color: $card-bg-color;
+    text-align: $text-al-c;
+}
+
+.teamate__photo {
+    border-radius: $brd-r-xl;
+}
+
+.teammate__name {
+    font-size: $text-fs-xl;
+    line-height: $lh-l;
+    font-weight: $fw-s;
+    color: $color-primary;
+}
+
+.teammate__position {
+    color: $color-secondary;
+}
+
+.social {
+    list-style: $list-s;
+    display: $disp-f;
+    gap: $gap1;
+}

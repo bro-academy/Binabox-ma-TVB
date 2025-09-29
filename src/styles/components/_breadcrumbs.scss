@@ -1,0 +1,14 @@
+.breadcrumbs {
+    list-style: $list-s;
+    display: $disp-f;
+    gap: $gap1;
+    align-items: $text-al-c;
+    font-size: $text-fs-s;
+    line-height: $lh-s;
+    font-weight: $fw-l;
+    color: $color-primary;
+}
+
+.breadcrumbs__item--active {
+    color: $placeholder-color;
+}

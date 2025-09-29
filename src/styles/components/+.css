@@ -1,1 +1,14 @@
+@import "./_about.scss";
+@import "./_art.scss";
+@import "./_banner.scss";
+@import "./_benefits.scss";
+@import "./_blog.scss";
+@import "./_breadcrumbs.scss";
 @import "./_button.scss";
+@import "./_card.scss";
+@import "./_catalog.scss";
+@import "./_comment.scss";
+@import "./_faq.scss";
+@import "./_sidebar.scss";
+@import "./_story.scss";
+@import "./_team.scss";

@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+.header{
+    .navigation-list {
+        list-style: none;
+        display: $disp-f;
+        font-weight: $fw-l;
+        font-size: $text-fs-s;
+        line-height: $lh-s;
+    }
+
+    .navigation__link {
+        padding: 8px 20px 8px 20px;
+        border-bottom: 2px solid transparent;
+        display: $disp-b;
+    }
+
+    .navigation__link--active:hover {
+        border-bottom-color: $accent-color;
+        text-decoration: none;
+    }
+}

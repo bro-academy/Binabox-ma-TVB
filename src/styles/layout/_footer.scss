@@ -1,0 +1,32 @@
+.footer{
+    background-color: $card-bg-color-secondary;
+}
+
+.sitemap__title {
+    color: $color-primary;
+}
+
+.footer__title {
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    color: $color-primary;
+}
+
+.sitemap__list {
+    list-style: $list-s;
+    display: $disp-g;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap1;
+    font-size: $text-fs-xxs;
+    line-height: $lh-xxs;
+}
+
+.sitemap__link {
+    color: $color-primary;
+}
+
+.footer__rights {
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    color: $color-primary;
+}

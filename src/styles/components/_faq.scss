@@ -1,0 +1,21 @@
+.faq {
+    background-color: $card-bg-color;
+}
+
+.faq__title {
+    font-family: $ff-secondary;
+    font-size: $text-fs-xl;
+    line-height: $lh-l;
+    font-weight: $fw-s;
+    color: $color-primary;
+}
+
+.faq__link {
+    color: $accent-color;
+}
+
+.faq__content {
+    font-size: $text-fs-s;
+    line-height: $lh-s;
+    color: $color-primary;
+}

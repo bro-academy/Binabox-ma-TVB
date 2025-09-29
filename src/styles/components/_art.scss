@@ -1,0 +1,30 @@
+.art {
+    background-color: $card-bg-color;
+}
+
+.art__image {
+    width: $wd;
+    height: $hg;
+    display: $dp;
+}
+
+.art__info {
+    font-size: $text-fs-xs;
+    line-height: $lh-xs;
+    color: $color-secondary;
+    font-weight: $fw-l;
+}
+
+.art__title {
+    font-size: $header-fs-s;
+    line-height: $lh-xxl;
+    letter-spacing: $ls-s;
+}
+
+.art__subtitle {
+    text-align: $text-al-l;
+    font-size: $text-fs-s;
+    line-height: $lh-s;
+    font-weight: $fw-s;
+    color: $color-secondary;
+}

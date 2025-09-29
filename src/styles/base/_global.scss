@@ -1,7 +1,58 @@
 body {
-    font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
-    background-color: #0D0D15;
-    color: #F8F7FF;
-    font-size: 18px;
-    line-height: 28px;
+    font-family: $ff-primary;
+    background-color: $body-bg-color;
+    color: $color-thirdly;
+    font-size: $text-fs-m;
+    line-height: $lh-m;
+}
+
+a {
+    text-decoration: $text-dec-n;
+    color: $color-thirdly;
+    font-weight: $fw-l;
+}
+
+a:hover {
+    text-decoration: $text-d;
+}
+
+.heading {
+    text-align: $text-a;
+}
+
+
+h1,h2,h3,h4,h5 {
+    font-family: $ff-secondary;
+}
+
+h1 {
+    font-size: $header-fs-m;
+    line-height: $lh-xxxl;
+    letter-spacing: $ls-s;
+    font-weight: $fw-s;
+}
+
+h2 {
+    font-size: $header-fs-s;
+    line-height: $lh-xxl;
+    letter-spacing: $ls-s;
+}
+
+h3 {
+    font-size: $text-fs-xxl;
+    line-height: $lh-xl;
+    letter-spacing: $ls-s
+}
+h4 {
+    font-size: $text-fs-xl;
+    line-height: $lh-l;
+}
+
+h5 {
+    font-size: $text-fs-l;
+    line-height: $lh-s;
+}
+
+ol, ul {
+    list-style: $list-s;
 }
