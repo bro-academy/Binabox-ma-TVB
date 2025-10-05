@@ -1,7 +1,7 @@
 @use '../base/variables' as *;
 
 .header{
-    .navigation-list {
+&__navigation-list {
         list-style: none;
         display: $disp-f;
         font-weight: $fw-l;
@@ -9,9 +9,10 @@
         line-height: $lh-s;
     }
 
-    .navigation__link {
+    &__navigation__link {
+        color: $color-primary;
         padding: 8px 20px 8px 20px;
-        border-bottom: 2px solid transparent;
+        border-bottom: $brd-w-s solid transparent;
         display: $disp-b;
     }
 

@@ -3,7 +3,7 @@
     <ul class="categories">
         {% for item in blog.aside.categories.list %}
         <li class="categories__item">
-            <a class="categories__link" href="{{ item.link }}">{{ item.text }}({{ item.count }})</a>
+            <a class="categories__link link" href="{{ item.link }}">{{ item.text }}({{ item.count }})</a>
         </li>
         {% endfor %}
     </ul>

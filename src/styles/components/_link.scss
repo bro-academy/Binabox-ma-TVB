@@ -1,0 +1,23 @@
+@use '../base/variables' as *;
+
+    .link {
+        color: $link-color;
+        font-weight: $fw-l;
+
+        &:hover {
+            color: $accent-color-focus;
+        }
+
+        &:focus {
+            border: $brd-w-s solid $accent-color-focus;
+            border-radius: $brd-r-s;
+        }
+
+        &:active {
+            color: $accent-color-active;
+        }
+
+        &--disabled {
+            color: $separator-color-disabled;
+        }
+    }

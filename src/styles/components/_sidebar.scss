@@ -3,11 +3,11 @@
     background-color: $card-bg-color;
 }
 
-.sidebar__title {
-    border-bottom: 1px solid $border-color;
+&__sidebar__title {
+    border-bottom: $brd-w-s solid $border-color;
 }
 
-.categories {
+&__categories {
     list-style: $list-s;
     display: $disp-f;
     flex-direction: column;
@@ -17,11 +17,11 @@
     font-weight: $fw-l;
 }
 
-.categories__link {
+&__categories__link {
     color: $color-primary;
 }
 
-.tags {
+&__tags {
     list-style: $list-s;
     display: $disp-f;
     gap: $gap1;

@@ -14,18 +14,18 @@
     border-radius: $brd-r-xl;
 }
 
-.teammate__name {
+&__teammate__name {
     font-size: $text-fs-xl;
     line-height: $lh-l;
     font-weight: $fw-s;
     color: $color-primary;
 }
 
-.teammate__position {
+&__teammate__position {
     color: $color-secondary;
 }
 
-.social {
+&__social {
     list-style: $list-s;
     display: $disp-f;
     gap: $gap1;

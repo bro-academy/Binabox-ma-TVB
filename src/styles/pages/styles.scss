@@ -1,6 +1,7 @@
 @use '../base/variables';
 @use '../base/global';
-
+@use '../components/link';
+@use '../components/button';
 
 @use '../components/banner';
 @use '../components/catalog';
@@ -14,7 +15,6 @@
 @use '../components/breadcrumbs';
 @use '../components/story';
 @use '../components/comment';
-@use '../components/button';
 @use '../components/sidebar';
 
 
