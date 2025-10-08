@@ -1,7 +1,7 @@
 @use '../base/variables' as *;
 .blog-list {
-    list-style: $list-s;
-    display: $disp-g;
+    list-style: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $gap1;
 }

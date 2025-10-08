@@ -1,82 +1,82 @@
 @use '../base/variables' as *;
 .button {
-    border: $brd-w-s solid $separator-color;
-    font-weight: $fw-l;
+    border: $bwidth1 solid $grey6;
+    font-weight: $fw3;
     background-color: transparent;
-    color: $color-primary;
+    color: $grey1;
     cursor: pointer;
 
     &:hover,
     &:active {
-            border: $brd-w-s solid $separator-color-secondary;
-            background-color: $separator-color-secondary;
+            border: $bwidth1 solid $grey7;
+            background-color: $grey7;
         }
 
         &:focus {
-            border: $brd-w-m solid $accent-color-focus;
-            background-color: $separator-color-secondary;
+            border: $bwidth2 solid $blue2;
+            background-color: $grey7;
         }
 
         &:disabled {
-            border: $brd-w-s solid $separator-color-disabled;
-            background-color: $background-color-disabled;
+            border: $bwidth1 solid $grey16;
+            background-color: $grey17;
         }
 }
 
 
 .button--primary {
-    border: $brd-w-s solid transparent;
-    background-color: $accent-color;
+    border: $bwidth1 solid transparent;
+    background-color: $blue1;
 
     &:hover {
-        background-color: $accent-color-focus;
+        background-color: $blue2;
     }
 
     &:focus {
-        border: $brd-w-m solid $accent-color-focus;
-        background-color: $accent-color;
+        border: $bwidth2 solid $blue2;
+        background-color: $blue1;
     }
 
     &:active {
-        border: $brd-w-s solid transparent;
-        background-color: $accent-color-active;
+        border: $bwidth1 solid transparent;
+        background-color: $blue3;
     }
 
     &:disabled {
-        background-color: $background-color-disabled;
-        color: $separator-color-disabled;
+        background-color: $grey17;
+        color: $grey16;
     }
 }
 
 .button--large {
-    font-size: $text-fs-m;
-    line-height: $lh-m;
+    font-size: $fs4;
+    line-height: $lh4;
 }
 
 .button--small {
-    font-size: $text-fs-s;
-    line-height: $lh-xxs;
+    font-size: $fs3;
+    line-height: $lh1;
 }
 
 .button--primary {
-    border: 2px solid $accent-color;
-    background-color: $accent-color;
+    border: $bwidth1 solid $blue1;
+    background-color: $blue1;
 }
 
 .button--switch:hover {
-    border: 2px solid $accent-color;
-    background-color: $accent-color;
-    color: $body-bg-color;
+    border: $bwidth1 solid $blue1;
+    background-color: $blue1;
+    color: $grey7;
 }
 
 .label {
-    font-size: $text-fs-xs;
-    line-height: $lh-xs;
-    font-weight: $fw-l;
-    color: $accent-color;
-    background-color: $color-primary;
+    font-size: $fs2;
+    line-height: $lh2;
+    font-weight: $fw3;
+    color: $blue1;
+    background-color: $grey1;
 }
 .label--sold {
-    background-color: $negative-color;
-    color: $color-primary;
+    background-color: $red1;
+    color: $grey1;
 }

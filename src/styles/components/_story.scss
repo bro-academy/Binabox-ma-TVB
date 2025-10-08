@@ -1,15 +1,15 @@
 @use '../base/variables' as *;
 .image-form__description, .image-form__text {
-    font-size: $text-fs-s;
-    line-height: $lh-s;
-    font-weight: $fw-m;
+    font-size: $fs3;
+    line-height: $lh3;
+    font-weight: $fw2;
 }
 
 .story__author {
-    font-size: $text-fs-xs;
-    line-height: $lh-xs;
-    font-weight: $fw-l;
-    color: $color-secondary;
+    font-size: $fs2;
+    line-height: $lh2;
+    font-weight: $fw3;
+    color: $grey2;
 }
 
 .pointer-list {
@@ -17,22 +17,22 @@
 }
 
 .story__subtitle {
-    font-size: $text-fs-xxl;
-    line-height: $lh-xl;
-    font-weight: $fw-s;
+    font-size: $fs7;
+    line-height: $lh6;
+    font-weight: $fw1;
 }
 
 .story__link {
-    color: $link-color;
+    color: $blue4;
 }
 
 .story-footer__text {
-    font-size: $text-fs-s;
-    line-height: $lh-s;
+    font-size: $fs3;
+    line-height: $lh3;
 }
 
 .story-footer__sublist {
-    list-style: $list-s;
-    display: $disp-f;
+    list-style: none;
+    display: flex;
     gap: $gap1;
 }

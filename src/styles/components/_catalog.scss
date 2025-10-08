@@ -1,11 +1,11 @@
 @use '../base/variables' as *;
 .catalog-section__title {
-    font-size: $text-fs-xl;
-    line-height: $lh-l;
+    font-size: $fs6;
+    line-height: $lh5;
 }
 
 .catalog-list {
-    list-style: $list-s;
-    display: $disp-f;
+    list-style: none;
+    display: flex;
     gap: $gap4;
 }

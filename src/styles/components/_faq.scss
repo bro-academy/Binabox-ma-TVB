@@ -1,22 +1,22 @@
 @use '../base/variables' as *;
 .faq {
-    background-color: $card-bg-color;
+    background-color: $grey10;
 }
 
 .faq__title {
     font-family: $ff-secondary;
-    font-size: $text-fs-xl;
-    line-height: $lh-l;
-    font-weight: $fw-s;
-    color: $color-primary;
+    font-size: $fs6;
+    line-height: $lh5;
+    font-weight: $fw1;
+    color: $grey1;
 }
 
 .faq__link {
-    color: $accent-color;
+    color: $blue1;
 }
 
 .faq__content {
-    font-size: $text-fs-s;
-    line-height: $lh-s;
-    color: $color-primary;
+    font-size: $fs3;
+    line-height: $lh3;
+    color: $grey1;
 }

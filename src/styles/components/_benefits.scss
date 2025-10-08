@@ -1,17 +1,17 @@
 @use '../base/variables' as *;
 .benefits {
-    list-style: $list-s;
-    display: $disp-f;
+    list-style: none;
+    display: flex;
     gap: $gap4;
 }
 
 .benefits__title {
-    font-size: $text-fs-xl;
-    line-height: $lh-l;
-    font-weight: $fw-s;
-    color: $color-primary;
+    font-size: $fs6;
+    line-height: $lh5;
+    font-weight: $fw1;
+    color: $grey1;
 }
 
 .benefits__card {
-    background-color: $card-bg-color-secondary;
+    background-color: $grey11;
 }

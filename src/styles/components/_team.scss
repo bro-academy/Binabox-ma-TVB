@@ -1,32 +1,33 @@
 @use '../base/variables' as *;
 .team__list {
-    list-style: $list-s;
-    display: $disp-f;
+    list-style: none;
+    display: flex;
     gap: $gap4;
 }
 
 .teammate {
-    background-color: $card-bg-color;
-    text-align: $text-al-c;
-}
+    background-color: $grey10;
+    text-align: center;
 
-.teamate__photo {
-    border-radius: $brd-r-xl;
+
+&__teamate__photo {
+    border-radius: $brad3;
 }
 
 &__teammate__name {
-    font-size: $text-fs-xl;
-    line-height: $lh-l;
-    font-weight: $fw-s;
-    color: $color-primary;
+    font-size: $fs6;
+    line-height: $lh5;
+    font-weight: $fw1;
+    color: $grey1;
 }
 
 &__teammate__position {
-    color: $color-secondary;
+    color: $grey2;
 }
 
 &__social {
-    list-style: $list-s;
-    display: $disp-f;
+    list-style: none;
+    display: flex;
     gap: $gap1;
+}
 }

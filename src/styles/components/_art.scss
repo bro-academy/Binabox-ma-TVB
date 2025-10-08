@@ -1,31 +1,31 @@
 @use '../base/variables' as *;
 .art {
-    background-color: $card-bg-color;
+    background-color: $grey9;
 }
 
 .art__image {
-    width: $wd;
-    height: $hg;
-    display: $disp-b;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .art__info {
-    font-size: $text-fs-xs;
-    line-height: $lh-xs;
-    color: $color-secondary;
-    font-weight: $fw-l;
+    font-size: $fs2;
+    line-height: $lh2;
+    color: $grey2;
+    font-weight: $fw3;
 }
 
 .art__title {
-    font-size: $header-fs-s;
-    line-height: $lh-xxl;
-    letter-spacing: $ls-s;
+    font-size: $fs8;
+    line-height: $lh8;
+    letter-spacing: $ls;
 }
 
 .art__subtitle {
-    text-align: $text-al-l;
-    font-size: $text-fs-s;
-    line-height: $lh-s;
-    font-weight: $fw-s;
-    color: $color-secondary;
+    text-align: left;
+    font-size: $fs3;
+    line-height: $lh3;
+    font-weight: $fw1;
+    color: $grey2;
 }

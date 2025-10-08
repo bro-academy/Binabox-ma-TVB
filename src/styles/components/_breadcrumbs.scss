@@ -1,15 +1,15 @@
 @use '../base/variables' as *;
 .breadcrumbs {
-    list-style: $list-s;
-    display: $disp-f;
+    list-style: none;
+    display: flex;
     gap: $gap1;
-    align-items: $text-al-c;
-    font-size: $text-fs-s;
-    line-height: $lh-s;
-    font-weight: $fw-l;
-    color: $color-primary;
+    align-items: center;
+    font-size: $fs3;
+    line-height: $lh3;
+    font-weight: $fw3;
+    color: $grey1;
 }
 
 .breadcrumbs__item--active {
-    color: $placeholder-color;
+    color: $grey15;
 }

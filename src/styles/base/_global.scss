@@ -1,24 +1,24 @@
 @use 'variables' as *;
 body {
     font-family: $ff-primary;
-    background-color: $body-bg-color;
-    color: $color-thirdly;
-    font-size: $text-fs-m;
-    line-height: $lh-m;
+    background-color: $grey9;
+    color: $grey3;
+    font-size: $fs4;
+    line-height: $lh4;
 }
 
 a {
-    text-decoration: $text-dec-n;
-    color: $color-thirdly;
-    font-weight: $fw-l;
+    text-decoration: none;
+    color: $grey3;
+    font-weight: $fw3;
 }
 
 a:hover {
-    text-decoration: $text-dec;
+    text-decoration: underline;
 }
 
 .heading {
-    text-align: $text-al-c;
+    text-align: center;
 }
 
 
@@ -27,33 +27,33 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-    font-size: $header-fs-m;
-    line-height: $lh-xxxl;
-    letter-spacing: $ls-s;
-    font-weight: $fw-s;
+    font-size: $fs9;
+    line-height: $lh8;
+    letter-spacing: $ls;
+    font-weight: $fw1;
 }
 
 h2 {
-    font-size: $header-fs-s;
-    line-height: $lh-xxl;
-    letter-spacing: $ls-s;
+    font-size: $fs8;
+    line-height: $lh7;
+    letter-spacing: $ls;
 }
 
 h3 {
-    font-size: $text-fs-xxl;
-    line-height: $lh-xl;
-    letter-spacing: $ls-s
+    font-size: $fs7;
+    line-height: $lh6;
+    letter-spacing: $ls
 }
 h4 {
-    font-size: $text-fs-xl;
-    line-height: $lh-l;
+    font-size: $fs7;
+    line-height: $lh5;
 }
 
 h5 {
-    font-size: $text-fs-l;
-    line-height: $lh-s;
+    font-size: $fs5;
+    line-height: $lh3;
 }
 
 ol, ul {
-    list-style: $list-s;
+    list-style: none;
 }

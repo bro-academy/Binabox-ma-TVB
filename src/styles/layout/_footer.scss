@@ -1,33 +1,33 @@
 @use '../base/variables' as *;
 .footer{
-    background-color: $card-bg-color-secondary;
+    background-color: $grey11;
 }
 
 .sitemap__title {
-    color: $color-primary;
+    color: $grey1;
 }
 
 .footer__title {
-    font-size: $text-fs-xs;
-    line-height: $lh-xs;
-    color: $color-primary;
+    font-size: $fs2;
+    line-height: $lh2;
+    color: $grey1;
 }
 
 .sitemap__list {
-    list-style: $list-s;
-    display: $disp-g;
+    list-style: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $gap1;
-    font-size: $text-fs-xxs;
-    line-height: $lh-xxs;
+    font-size: $fs1;
+    line-height: $lh1;
 }
 
 .sitemap__link {
-    color: $color-primary;
+    color: $grey1;
 }
 
 .footer__rights {
-    font-size: $text-fs-xs;
-    line-height: $lh-xs;
-    color: $color-primary;
+    font-size: $fs2;
+    line-height: $lh2;
+    color: $grey1;
 }

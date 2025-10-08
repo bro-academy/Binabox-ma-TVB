@@ -1,17 +1,17 @@
 @use '../base/variables' as *;
 .card {
-    background-color: $card-bg-color;
+    background-color: $grey10;
 }
 
 .card__price {
-    font-size: $header-fs-s;
-    line-height: $lh-xxl;
-    letter-spacing: $ls-s;
+    font-size: $fs8;
+    line-height: $lh8;
+    letter-spacing: $ls;
 }
 
 .card__author {
-    font-size: $text-fs-l;
-    line-height: $lh-m;
-    font-weight: $fw-m;
-    color: $color-secondary;
+    font-size: $fs5;
+    line-height: $lh4;
+    font-weight: $fw2;
+    color: $grey2;
 }
