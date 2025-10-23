@@ -1,31 +1,32 @@
 @use '../base/variables' as *;
 .art {
     background-color: $grey9;
-}
 
-.art__image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
-.art__info {
-    font-size: $fs2;
-    line-height: $lh2;
-    color: $grey2;
-    font-weight: $fw3;
-}
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-.art__title {
-    font-size: $fs8;
-    line-height: $lh8;
-    letter-spacing: $ls;
-}
+    &__info {
+        font-size: $fs14;
+        line-height: $lh-20;
+        color: $grey2;
+        font-weight: $f-smb;
+    }
 
-.art__subtitle {
-    text-align: left;
-    font-size: $fs3;
-    line-height: $lh3;
-    font-weight: $fw1;
-    color: $grey2;
+    &__title {
+        font-size: $fs36;
+        line-height: $lh-62;
+        letter-spacing: $ls;
+    }
+
+    &__subtitle {
+        text-align: left;
+        font-size: $fs16;
+        line-height: $lh-24;
+        font-weight: $f-m;
+        color: $grey2;
+    }
 }

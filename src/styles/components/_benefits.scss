@@ -1,17 +1,62 @@
 @use '../base/variables' as *;
 .benefits {
-    list-style: none;
     display: flex;
     gap: $gap4;
-}
 
-.benefits__title {
-    font-size: $fs6;
-    line-height: $lh5;
-    font-weight: $fw1;
-    color: $grey1;
-}
 
-.benefits__card {
-    background-color: $grey11;
+    &__title {
+        font-size: $fs24;
+        line-height: $lh-32;
+        font-weight: $f-m;
+        color: $grey1;
+    }
+
+    &__card {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        background-color: $grey11;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-image: url('../../assets/images/hover-decor.png');
+            opacity: 0;
+            transition: opacity 0.2s linear;
+            z-index: 1;
+
+        }
+    
+        &:hover::after{
+            opacity: 1;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-image: url('../../assets/images/hover-decor.png');
+            background-position: bottom right;
+            opacity: 0;
+            transition: opacity 0.2s linear;
+            z-index: 1;
+
+        }
+    
+        &:hover::before{
+            opacity: 1;
+        }
+    }
 }

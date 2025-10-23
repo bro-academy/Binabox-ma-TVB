@@ -11,12 +11,9 @@ $grey9: #0D0D15;
 $grey10: #1D1C28;
 $grey11: #1A1925;
 $grey12: #002754;
-$grey13: #D0D7FB2B;
-$grey14: #BFC5EE1F;
-$grey15: #E7EEF7A8;
-$grey16: #E5ECFB5C;
-$grey17: #D0D7FB2B;
-$grey18: rgba(191 197 238 / .12);
+$grey13: #E5ECFB5C;
+
+
 
 $blue1: #0265DC;
 $blue2: #3892F3;
@@ -37,41 +34,40 @@ $ls: -0.5px;
 
 
 /* line-heights */
-$lh1: 16px;
-$lh2: 20px;
-$lh3: 24px;
-$lh4: 28px;
-$lh5: 32px;
-$lh6: 36px;
-$lh7: 48px;
-$lh8: 62px;
+$lh-16: 16px;
+$lh-20: 20px;
+$lh-24: 24px;
+$lh-28: 28px;
+$lh-32: 32px;
+$lh-36: 36px;
+$lh-48: 48px;
+$lh-62: 62px;
 
 
 /* font-weight */
-$fw1: 400;
-$fw2: 500;
-$fw3: 600;
+$f-m: 500 (font-medium);
+$f-smb: 600 (font-semiBold);
 
 
 /* font-size */
-$fs1: 12px;
-$fs2: 14px;
-$fs3: 16px;
-$fs4: 18px;
-$fs5: 20px;
-$fs6: 24px;
-$fs7: 28px;
-$fs8: 36px;
-$fs9: 52px;
+$fs12: 12px;
+$fs14: 14px;
+$fs16: 16px;
+$fs18: 18px;
+$fs20: 20px;
+$fs24: 24px;
+$fs28: 28px;
+$fs36: 36px;
+$fs52: 52px;
 
 /* Border radius */
-$brad1: 5px;
-$brad2: 16px;
-$brad3: 56px;
+$brad5: 5px;
+$brad16: 16px;
+$brad56: 56px;
 
 /* border width */
-$bwidth1: 2px;
-$bwidth2: 4px;
+$bwidth2: 2px;
+$bwidth4: 4px;
 
 /* Gap */
 $gap1: 10px;

@@ -1,17 +1,71 @@
 @use '../base/variables' as *;
 .card {
+    display: block;
+    position: relative;
     background-color: $grey10;
-}
 
-.card__price {
-    font-size: $fs8;
-    line-height: $lh8;
-    letter-spacing: $ls;
-}
+        
+        &:hover .card__overlay, &:hover::before, &:hover::after{
+        opacity: 1;
+    }
 
-.card__author {
-    font-size: $fs5;
-    line-height: $lh4;
-    font-weight: $fw2;
-    color: $grey2;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background-image: url('../../assets/images/hover-decor.png');
+        opacity: 0;
+        transition: opacity 0.2s linear;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background-image: url('../../assets/images/hover-decor.png');
+        background-position: bottom right;
+        opacity: 0;
+        transition: opacity 0.2s linear;
+        z-index: 2;
+
+    }   
+
+    &__price {
+        font-size: $fs36;
+        line-height: $lh-62;
+        letter-spacing: $ls;
+    }
+
+    &__author {
+        font-size: $fs20;
+        line-height: $lh-28;
+        color: $grey2;
+    }
+    
+    &__content{
+        position: relative;
+        z-index: 1;
+    }
+
+    &__overlay{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        gap: $gap1;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.2s linear;
+
+
+        }
 }

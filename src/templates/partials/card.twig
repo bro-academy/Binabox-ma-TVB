@@ -1,9 +1,15 @@
         <article class="card">
-            <img class="card__image" src="{{ item.image_src }}" width="250" height="320" alt="{{ item.image_alt }}">
-            <span class="label
-            {% if item.label == "Sold out" %}
-	        label--sold
-	        {% endif %}">{{ item.label }}</span>
-            <h3 class="card__price">{{ item.price }}</h3>
-            <p class="card__author">{{ item.name }}</p>
+            <div class="card__content">
+                <img class="card__image" src="{{ item.image_src }}" width="250" height="320" alt="{{ item.image_alt }}">
+                <span class="label
+                {% if item.label == "Sold out" %}
+                label--sold
+                {% endif %}">{{ item.label }}</span>
+                <h3 class="card__price">{{ item.price }}</h3>
+                <p class="card__author">{{ item.name }}</p>
+            </div>
+            <div class="card__overlay">
+                <button type="button" class="button button--card">Favorites</button>
+                <button type="button" class="button button--large button--primary">Buy</button>
+            </div>
         </article>

@@ -1,6 +1,5 @@
 @use '../base/variables' as *;
 .team__list {
-    list-style: none;
     display: flex;
     gap: $gap4;
 }
@@ -10,24 +9,23 @@
     text-align: center;
 
 
-&__teamate__photo {
-    border-radius: $brad3;
+&__photo {
+    border-radius: $brad56;
 }
 
-&__teammate__name {
-    font-size: $fs6;
-    line-height: $lh5;
-    font-weight: $fw1;
+&__name {
+    font-size: $fs24;
+    line-height: $lh-32;
+    font-weight: $f-m;
     color: $grey1;
 }
 
-&__teammate__position {
+&__position {
     color: $grey2;
 }
+}
 
-&__social {
-    list-style: none;
+.social {
     display: flex;
     gap: $gap1;
-}
 }

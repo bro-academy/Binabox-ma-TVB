@@ -3,14 +3,14 @@ body {
     font-family: $ff-primary;
     background-color: $grey9;
     color: $grey3;
-    font-size: $fs4;
-    line-height: $lh4;
+    font-size: $fs18;
+    line-height: $lh-28;
 }
 
 a {
     text-decoration: none;
     color: $grey3;
-    font-weight: $fw3;
+    font-weight: $f-smb;
 }
 
 a:hover {
@@ -27,31 +27,31 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-    font-size: $fs9;
-    line-height: $lh8;
+    font-size: $fs52;
+    line-height: $lh-62;
     letter-spacing: $ls;
-    font-weight: $fw1;
+    font-weight: $f-m;
 }
 
 h2 {
-    font-size: $fs8;
-    line-height: $lh7;
+    font-size: $fs36;
+    line-height: $lh-48;
     letter-spacing: $ls;
 }
 
 h3 {
-    font-size: $fs7;
-    line-height: $lh6;
+    font-size: $fs28;
+    line-height: $lh-36;
     letter-spacing: $ls
 }
 h4 {
-    font-size: $fs7;
-    line-height: $lh5;
+    font-size: $fs28;
+    line-height: $lh-32;
 }
 
 h5 {
-    font-size: $fs5;
-    line-height: $lh3;
+    font-size: $fs20;
+    line-height: $lh-24;
 }
 
 ol, ul {

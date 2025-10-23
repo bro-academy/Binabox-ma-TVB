@@ -1,26 +1,29 @@
 @use '../base/variables' as *;
-.banner__title--highlited {
-    color: $blue1;
-}
+.banner {
 
-.banner__subtitle {
-    font-weight: $fw3;
-    font-size: $fs5;
-    line-height: $lh4;
-    color: $grey4;
+    &__title--highlited {
+        color: $blue1;
+    }
+
+    &__subtitle {
+        font-weight: $f-smb;
+        font-size: $fs20;
+        line-height: $lh-28;
+        color: $grey1;
+    }
 }
 
 .banner-content__count {
-    font-family: $ff-secondary;
-    font-weight: $fw1;
-    font-size: $fs9;
-    line-height: $lh8;
-    letter-spacing: $ls;
-    color: $grey5
-}
+        font-family: $ff-secondary;
+        font-weight: $f-m;
+        font-size: $fs52;
+        line-height: $lh-62;
+        letter-spacing: $ls;
+        color: $grey1;
+    }
 
 .banner-content__info {
-    font-size: $fs3;
-    line-height: $lh3;
-    color: $grey2
-}
+        font-size: $fs16;
+        line-height: $lh-24;
+        color: $grey2;
+    }

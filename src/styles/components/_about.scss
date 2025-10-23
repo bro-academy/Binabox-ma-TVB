@@ -1,8 +1,7 @@
 @use '../base/variables' as *;
 .about__subtitle {
     text-align: center;
-    font-size: left;
-    line-height: $lh5;
-    font-weight: $fw2;
+    font-size: $fs20;
+    line-height: $lh-28;
     color: $grey2
 }

@@ -8,18 +8,17 @@
 }
 
 .footer__title {
-    font-size: $fs2;
-    line-height: $lh2;
+    font-size: $fs14;
+    line-height: $lh-20;
     color: $grey1;
 }
 
 .sitemap__list {
-    list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $gap1;
-    font-size: $fs1;
-    line-height: $lh1;
+    font-size: $fs12;
+    line-height: $lh-16;
 }
 
 .sitemap__link {
@@ -27,7 +26,7 @@
 }
 
 .footer__rights {
-    font-size: $fs2;
-    line-height: $lh2;
+    font-size: $fs14;
+    line-height: $lh-20;
     color: $grey1;
 }

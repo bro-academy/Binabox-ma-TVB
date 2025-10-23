@@ -1,82 +1,94 @@
 @use '../base/variables' as *;
 .button {
-    border: $bwidth1 solid $grey6;
-    font-weight: $fw3;
+    border: $bwidth2 solid $grey6;
+    font-weight: $f-smb;
     background-color: transparent;
     color: $grey1;
     cursor: pointer;
 
     &:hover,
     &:active {
-            border: $bwidth1 solid $grey7;
+            border-color: $grey7;
             background-color: $grey7;
+            text-decoration: none;
         }
 
         &:focus {
-            border: $bwidth2 solid $blue2;
+            border-color: $blue2;
+            outline: $bwidth2 solid $blue2;
             background-color: $grey7;
         }
 
         &:disabled {
-            border: $bwidth1 solid $grey16;
-            background-color: $grey17;
+            border: $bwidth2 solid $grey13;
+            background-color: $grey6;
         }
 }
 
 
 .button--primary {
-    border: $bwidth1 solid transparent;
+    border: $bwidth2 solid $blue1;
     background-color: $blue1;
 
     &:hover {
         background-color: $blue2;
+        border-color: $blue2;
     }
 
     &:focus {
-        border: $bwidth2 solid $blue2;
-        background-color: $blue1;
+        border-color: $blue2;
+        outline: $bwidth2 solid $blue2;
     }
 
     &:active {
-        border: $bwidth1 solid transparent;
+        border-color: transparent;
         background-color: $blue3;
     }
 
     &:disabled {
-        background-color: $grey17;
-        color: $grey16;
+        background-color: $grey6;
+        color: $grey13;
+        border-color: transparent;
     }
 }
 
 .button--large {
-    font-size: $fs4;
-    line-height: $lh4;
+    font-size: $fs18;
+    line-height: $lh-28;
 }
 
 .button--small {
-    font-size: $fs3;
-    line-height: $lh1;
+    font-size: $fs16;
+    line-height: $lh-16;
 }
 
 .button--primary {
-    border: $bwidth1 solid $blue1;
+    border: $bwidth2 solid $blue1;
     background-color: $blue1;
 }
 
 .button--switch:hover {
-    border: $bwidth1 solid $blue1;
+    border: $bwidth2 solid $blue1;
     background-color: $blue1;
-    color: $grey7;
+    color: $grey9;
 }
 
 .label {
-    font-size: $fs2;
-    line-height: $lh2;
-    font-weight: $fw3;
+    font-size: $fs14;
+    line-height: $lh-20;
+    font-weight: $f-smb;
     color: $blue1;
     background-color: $grey1;
 }
 .label--sold {
     background-color: $red1;
     color: $grey1;
+}
+
+.button--card {
+    font-size: $fs18;
+    line-height: $lh-28;
+    font-weight: $f-smb;
+    color: $grey9;
+    background-color: $grey1;
 }

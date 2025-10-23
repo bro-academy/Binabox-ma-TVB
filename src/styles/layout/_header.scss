@@ -1,24 +1,26 @@
 @use '../base/variables' as *;
 
-.header{
-.navigation-list {
-        list-style: none;
+.navigation{
+    &__list {
         display: flex;
-        font-weight: $fw3;
-        font-size: $fs3;
-        line-height: $lh3;
-    
+        font-weight: $f-smb;
+        font-size: $fs16;
+        line-height: $lh-24;
+    }
 
-    &__navigation__link {
+    &__link {
         color: $grey1;
         padding: 8px 20px 8px 20px;
-        border-bottom: $bwidth1 solid transparent;
+        border-bottom: $bwidth2 solid transparent;
         display: block;
-    }
-}
 
-    .navigation__link--active:hover {
-        border-bottom-color: $blue1;
-        text-decoration: none;
+        &:hover {
+            border-bottom-color: $blue1;
+        }
     }
+
+    &__link--active{
+        border-bottom-color: $blue1;
+    }
+    
 }

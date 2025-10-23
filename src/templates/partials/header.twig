@@ -1,9 +1,9 @@
 <header class="header">  
-    <a class="logotype" href="{{ common.logo_link }}">
+    <a class="logotype link logo" href="{{ common.logo_link }}">
         <img class="logotype__image" src="{{ common.logo_src }}" width="24" height="24" alt="{{ common.logo_alt }}">
     </a>
     <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation__list">
             {% for item in common.header.navigation %}
             <li class="navigation__item">
                 <a href={{ item.link }} class="navigation__link link

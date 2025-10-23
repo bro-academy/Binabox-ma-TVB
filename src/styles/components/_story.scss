@@ -1,38 +1,37 @@
 @use '../base/variables' as *;
-.image-form__description, .image-form__text {
-    font-size: $fs3;
-    line-height: $lh3;
-    font-weight: $fw2;
+.illustration__description {
+    font-size: $fs16;
+    line-height: $lh-24;
 }
 
-.story__author {
-    font-size: $fs2;
-    line-height: $lh2;
-    font-weight: $fw3;
-    color: $grey2;
-}
+.story{
+    &__author {
+        font-size: $fs14;
+        line-height: $lh-20;
+        font-weight: $f-smb;
+        color: $grey2;
+    }
+    &__subtitle {
+        font-size: $fs28;
+        line-height: $lh-36;
+        font-weight: $f-m;
+    }
 
+    &__link {
+        color: $blue4;
+    }
+}
+.story-footer{
+    &__text {
+        font-size: $fs16;
+        line-height: $lh-24;
+    }
+
+    &__sublist {
+        display: flex;
+        gap: $gap1;
+    }
+}
 .pointer-list {
     list-style-image: url(../images/Logo.png);
-}
-
-.story__subtitle {
-    font-size: $fs7;
-    line-height: $lh6;
-    font-weight: $fw1;
-}
-
-.story__link {
-    color: $blue4;
-}
-
-.story-footer__text {
-    font-size: $fs3;
-    line-height: $lh3;
-}
-
-.story-footer__sublist {
-    list-style: none;
-    display: flex;
-    gap: $gap1;
 }
