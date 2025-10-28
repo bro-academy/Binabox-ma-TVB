@@ -1,8 +1,6 @@
 @use '../base/variables' as *;
 
     .link {
-        color: $grey1;
-        font-weight: $f-smb;
 
         &:hover {
             color: $blue2;
@@ -10,7 +8,7 @@
         }
 
         &:focus {
-            outline: $bwidth4 solid $blue2;
+            outline: $bwidth4 solid $blue4;
             border-radius: $brad5;
         }
 
@@ -23,10 +21,10 @@
         }
     }
 
-    .logo {
-        &:hover {
-            transition: opacity 0.8s;
-            color: $blue2;
-            text-decoration: none;
-        }
+.logo {
+    transition: opacity 0.2s;
+    
+    &:hover {
+        opacity: 0.8;
     }
+}

@@ -5,9 +5,9 @@
             <h4 class="catalog-filter__title">{{ module.header }}</h4>
             {% for item in module.fieldset %}
                 {% if item.type == "checkbox" %}
-                    {% include '/field-checkbox.twig' %}
+                    {% include 'field-checkbox.twig' %}
                 {% elseif item.type == "radio" %}
-                    {% include '/field-radio.twig' %}
+                    {% include 'field-radio.twig' %}
                 {% endif %}
             {% endfor %}
         </div>

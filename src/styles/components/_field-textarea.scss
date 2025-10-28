@@ -1,0 +1,18 @@
+@use '../base/variables' as *;
+
+.field-textarea {
+
+    &__input {
+        resize: none;
+
+        &::placeholder {
+            color: $grey16;
+        }
+
+        &:focus {
+            outline: $bwidth4 solid $blue6;
+            border: none;
+        }
+    }
+
+}

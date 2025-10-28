@@ -6,18 +6,34 @@
     &__title {
         font-family: $ff-secondary;
         font-size: $fs24;
-        line-height: $lh-32;
+        line-height: $lh32;
         font-weight: $f-m;
         color: $grey1;
     }
 
     &__link {
-        color: $blue4;
-    }
+        color: $blue1;
+            &:hover {
+                color: $blue2;
+            }
+
+            &:focus {
+                outline: $bwidth4 solid $blue4;
+                border-radius: $brad5;
+            }
+
+            &:active {
+                color: $blue3;
+            }
+
+            &--disabled {
+                color: $grey13;
+            }
+        }
 
     &__content {
         font-size: $fs16;
-        line-height: $lh-24;
+        line-height: $lh24;
         color: $grey1;
     }
 }

@@ -1,10 +1,35 @@
 @use '../base/variables' as *;
+
 .breadcrumbs {
     display: flex;
     gap: $gap1;
     align-items: center;
-    font-size: $fs16;
-    line-height: $lh-24;
-    font-weight: $f-smb;
-    color: $grey8;
+
+    &__link {
+        font-size: $fs16;
+        line-height: $lh24;
+        font-weight: $f-smb;
+
+            &:hover {
+                color: $blue2;
+                text-decoration: none;
+            }
+
+            &:focus {
+                outline: $bwidth4 solid $blue4;
+                border-radius: $brad5;
+            }
+
+            &:active {
+                color: $blue3;
+            }
+
+            &--disabled {
+                color: $grey13;
+            }
+        }
+
+    &__text {
+        color: $grey8;
+    }
 }

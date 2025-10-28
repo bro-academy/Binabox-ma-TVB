@@ -1,6 +1,6 @@
 <footer class="footer-section">
     <div class="footer">
-        <a class="logotype link logo" href="{{ common.logo_link }}">
+        <a class="logo" href="{{ common.logo_link }}">
             <img class="logotype__image" src="{{ common.logo_src }}" alt="{{ common.logo_alt }}">
         </a>
         <p class="footer__title">{{ common.footer.wording }}</p>
@@ -9,7 +9,7 @@
             <ul class="sitemap__list">
                 {% for item in common.footer.navigation.list %}
                 <li class="sitemap__item">
-                    <a class="sitemap__link link" href="{{ item.link }}">{{ item.text }}</a>
+                    <a class="sitemap__link" href="{{ item.link }}">{{ item.text }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -18,7 +18,7 @@
         <ul class="social">
             {% for item in common.footer.socials %}
                 <li class="social__item">
-                    <a class="social__link link" href="{{ item.link }}">
+                    <a class="icon" href="{{ item.link }}">
                         <img class="social__image" src="{{ item.logo }}" width="24" height="24" alt="{{ item.alt }}">
                     </a>
                 </li>

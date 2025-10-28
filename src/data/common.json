@@ -3,7 +3,7 @@
   {
     "siteTitle": "Binabox",
     "logo_link": "index.html",
-    "logo_src": "../assets/images/logo.png",
+    "logo_src": "../../src/assets/images/logo.png",
     "logo_alt": "Binabox logo",
     "header": 
     {
@@ -26,6 +26,13 @@
           "link": "contacts.html"
         }
       ],
+      "search": {
+        "action": "",
+        "name": "search_header",
+        "button_icon_src": "#",
+        "button_icon_alt": "Search in site",
+        "placeholder": "Search"
+      },
       "discord": 
       {
         "button_icon":"discord.svg",

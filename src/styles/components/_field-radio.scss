@@ -1,0 +1,61 @@
+@use '../base/variables' as *;
+
+.field-radio {
+
+    &__input {
+        appearance: none;
+        width: $size16;
+        height: $size16;
+        border-radius: $size16;
+        border: $bwidth2 solid $grey14;
+        background-color: $grey9;
+
+        &:checked {
+            border: $bwidth5 solid $blue1;
+        }
+
+        &:hover {
+            background-color: $grey10;
+
+            &:checked {
+                border-color: $blue2;
+            }
+        }
+
+        &:active {
+            border: $bwidth5 solid $blue5;
+
+            &:checked {
+                border: $bwidth5 solid $blue5;
+            }
+        }
+
+        &:focus {
+            border: $bwidth2 solid $grey16;
+            outline: $bwidth2 solid $blue2;
+            outline-offset: 1px;
+
+            &:checked {
+                border: $bwidth5 solid $blue2;
+                outline: $bwidth2 solid $blue2;
+                outline-offset: 1px;
+            }
+        }
+
+        &:disabled {
+            border-color: transparent;
+            background-color: $grey6;
+
+            &:checked {
+                border-color: $grey14;
+                background-color: $grey6;
+            }
+        }
+
+        &:user-invalid {
+            border-color: $red1;
+        }
+
+    }
+
+}

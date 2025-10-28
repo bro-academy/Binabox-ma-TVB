@@ -4,17 +4,13 @@ body {
     background-color: $grey9;
     color: $grey3;
     font-size: $fs18;
-    line-height: $lh-28;
+    line-height: $lh28;
 }
 
 a {
     text-decoration: none;
     color: $grey3;
     font-weight: $f-smb;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .heading {
@@ -28,30 +24,30 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: $fs52;
-    line-height: $lh-62;
+    line-height: $lh62;
     letter-spacing: $ls;
     font-weight: $f-m;
 }
 
 h2 {
     font-size: $fs36;
-    line-height: $lh-48;
+    line-height: $lh48;
     letter-spacing: $ls;
 }
 
 h3 {
     font-size: $fs28;
-    line-height: $lh-36;
+    line-height: $lh36;
     letter-spacing: $ls
 }
 h4 {
     font-size: $fs28;
-    line-height: $lh-32;
+    line-height: $lh32;
 }
 
 h5 {
     font-size: $fs20;
-    line-height: $lh-24;
+    line-height: $lh24;
 }
 
 ol, ul {
