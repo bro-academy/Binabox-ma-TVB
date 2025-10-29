@@ -1,9 +1,9 @@
 <header class="header">  
-    <a class="logotype" href="{{ common.logo_link }}">
+    <a class="logo" href="{{ common.logo_link }}">
         <img class="logotype__image" src="{{ common.logo_src }}" width="24" height="24" alt="{{ common.logo_alt }}">
     </a>
     <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation__list">
             {% for item in common.header.navigation %}
             <li class="navigation__item">
                 <a href={{ item.link }} class="navigation__link
@@ -15,6 +15,7 @@
 			{% endfor %}
         </ul>
     </nav>
+    <div class="header__controls-search">{% include '/search.twig' with { item:common.header.search } %}</div>
     <a class="button button--large" href="{{ common.header.discord.button_link }}">{{ common.header.discord.button_text }}</a>
-    <button class="button button--large button--primary">{{ common.header.autorisation.button_text }}</button>  
+    <button type="button" class="button button--large button--primary">{{ common.header.autorisation.button_text }}</button>  
 </header>

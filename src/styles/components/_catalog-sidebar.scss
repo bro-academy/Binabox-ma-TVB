@@ -1,0 +1,17 @@
+@use '../base/variables' as *;
+
+.filter {
+
+    &__fieldset {
+        background-color: $grey10;
+        border: none;
+    }
+
+    &__title {
+        font-size: $fs24;
+        line-height: $lh32;
+        font-family: $ff-secondary;
+        border-bottom: $bwidth1 solid $grey7;
+    }
+
+}

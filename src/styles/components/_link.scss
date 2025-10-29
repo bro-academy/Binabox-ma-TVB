@@ -1,0 +1,30 @@
+@use '../base/variables' as *;
+
+    .link {
+
+        &:hover {
+            color: $blue2;
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: $bwidth4 solid $blue4;
+            border-radius: $brad5;
+        }
+
+        &:active {
+            color: $blue3;
+        }
+
+        &--disabled {
+            color: $grey13;
+        }
+    }
+
+.logo {
+    transition: opacity 0.2s;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,82 @@
+@use '../base/variables' as *;
+
+.field-checkbox {
+
+    &__input {
+        appearance: none;
+        width: $size16;
+        height: $size16;
+        border-radius: $brad4;
+        border: $bwidth2 solid $grey14;
+        background-color: $grey9;
+
+        &::before {
+            content: "\2714";
+            color: $grey1;
+            font-size: $fs10;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            opacity: 0;
+        }
+
+        &:checked {
+            background-color: $blue1;
+            border-color: transparent;
+
+            &::before {
+                opacity: 1;
+            }
+
+        }
+
+        &:hover {
+            background-color: $grey10;
+
+            &:checked {
+                background-color: $blue2;
+            }
+        }
+
+        &:active {
+            border-color: transparent;
+            background-color: $blue5;
+
+            &:checked {
+                background-color: $blue5;
+
+                &::before {
+                    color: $blue1;
+                }
+            }
+        }
+
+        &:focus {
+            outline: $bwidth2 solid $blue2;
+            background-color: $grey11;
+
+            &:checked {
+                background-color: $blue1;
+            }
+        }
+
+        &:disabled {
+            border-color: transparent;
+            background-color: $grey6;
+
+            &:checked::before {
+                color: $grey13;
+            }
+        }
+
+        &:user-invalid {
+            border-color: $red1;
+
+            &:checked {
+                background-color: $blue1;
+            }
+        }
+
+    }
+
+}

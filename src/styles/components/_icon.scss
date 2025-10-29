@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+.icon {
+    transition: opacity 0.2s;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}

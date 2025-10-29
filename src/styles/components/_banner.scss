@@ -1,0 +1,29 @@
+@use '../base/variables' as *;
+.banner {
+
+    &__title--highlited {
+        color: $blue1;
+    }
+
+    &__subtitle {
+        font-weight: $f-smb;
+        font-size: $fs20;
+        line-height: $lh28;
+        color: $grey1;
+    }
+}
+
+.banner-content__count {
+        font-family: $ff-secondary;
+        font-weight: $f-m;
+        font-size: $fs52;
+        line-height: $lh62;
+        letter-spacing: $ls;
+        color: $grey1;
+    }
+
+.banner-content__info {
+        font-size: $fs16;
+        line-height: $lh24;
+        color: $grey2;
+    }

@@ -1,0 +1,15 @@
+{% set page="catalog.html" %}
+{% extends 'src/templates/layouts/base.twig' %}
+{% from 'src/templates/partials/ui/icon.twig' import icon %}
+
+{% block content %}
+
+	{% include 'src/templates/partials/page_title.twig' with { page_header:catalog.header, breadcrumbs_array:catalog.breadcrumbs } %}
+
+	{% include 'src/templates/partials/catalog-sidebar.twig' %}
+
+	{% include 'src/templates/partials/select.twig' with { options_array:catalog.sort } %}
+
+	{% include 'src/templates/partials/search.twig' with { item:catalog.search } %}
+
+{% endblock %}

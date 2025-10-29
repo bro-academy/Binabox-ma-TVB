@@ -1,0 +1,30 @@
+
+@use '../base/variables' as *;
+
+.input-default {
+
+    border: $bwidth2 solid $grey6;
+    background-color: transparent;
+    font-size: $fs14;
+    line-height: $lh20;
+
+    &::placeholder {
+        color: $grey16;
+    }
+
+    &:hover {
+        border-color: $blue2;
+    }
+
+    &:focus {
+        border: $bwidth3 solid $blue2;
+    }
+
+    &:user-invalid {
+        border-color: $red1;
+    }
+
+    &:disabled {
+        background-color: $grey7;
+    }
+}

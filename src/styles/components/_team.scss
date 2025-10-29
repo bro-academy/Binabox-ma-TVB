@@ -1,0 +1,31 @@
+@use '../base/variables' as *;
+.team__list {
+    display: flex;
+    gap: $gap4;
+}
+
+.teammate {
+    background-color: $grey10;
+    text-align: center;
+
+
+&__photo {
+    border-radius: $brad56;
+}
+
+&__name {
+    font-size: $fs24;
+    line-height: $lh32;
+    font-weight: $f-m;
+    color: $grey1;
+}
+
+&__position {
+    color: $grey2;
+}
+}
+
+.social {
+    display: flex;
+    gap: $gap1;
+}

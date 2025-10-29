@@ -1,0 +1,45 @@
+@use '../base/variables' as *;
+
+.search {
+
+    border: $bwidth2 solid $grey6;
+    background-color: transparent;
+
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__button-icon {
+        color: $grey16;
+    }
+
+    &__input {
+        color: $blue1;
+        font-size: $fs14;
+        line-height: $lh20;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__input::placeholder {
+        color: $grey16;
+    }
+
+    &:hover {
+        border: $bwidth2 solid $blue2;
+    }
+
+    &:focus {
+        border: $bwidth3 solid $blue2;
+    }
+
+    &:has(&__input:user-invalid) {
+        border: $bwidth2 solid $red1;
+    }
+
+    &:has(&__input[disabled]) {
+        background-color: $grey7
+    }
+}

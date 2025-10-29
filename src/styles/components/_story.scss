@@ -1,0 +1,51 @@
+@use '../base/variables' as *;
+.illustration__description {
+    font-size: $fs16;
+    line-height: $lh24;
+}
+
+.story{
+    &__author {
+        font-size: $fs14;
+        line-height: $lh20;
+        font-weight: $f-smb;
+        color: $grey2;
+    }
+    &__subtitle {
+        font-size: $fs28;
+        line-height: $lh36;
+        font-weight: $f-m;
+    }
+
+    &__link {
+        color: $blue4;
+        &:hover {
+            color: $blue2;
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: $bwidth4 solid $blue2;
+            border-radius: $brad5;
+        }
+
+        &:active {
+            color: $blue3;
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        gap: $gap1;
+    }
+}
+
+.pointer-list {
+    list-style-image: url(../../assets/images/Logo.png);
+}
+
+.story-footer__text {
+    font-size: $fs16;
+    line-height: $lh24;
+}

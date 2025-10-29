@@ -1,0 +1,6 @@
+@use '../base/variables' as *;
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap1;
+}

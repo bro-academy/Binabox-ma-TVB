@@ -37,6 +37,7 @@
         "list": 
         [
           {
+            "link": "#",
             "image_scr": "#",
             "image_alt": "Echo of Bones",
             "label": "New",
@@ -44,6 +45,7 @@
             "name": "Echo of Bones"
           },
           {
+            "link": "#",
             "image_scr": "#",
             "image_alt": "Nyx the Watcher",
             "label": "New",
@@ -51,6 +53,7 @@
             "name": "Nyx the Watcher"
           },
           {
+            "link": "#",
             "image_scr": "#",
             "image_alt": "Blade of Silence",
             "label": "Sold out",
@@ -58,6 +61,7 @@
             "name": "Blade of Silence"
           },
           {
+            "link": "#",
             "image_scr": "#",
             "image_alt": "Data Core: Alpha",
             "label": "New",
@@ -65,6 +69,7 @@
             "name": "Data Core: Alpha"
           },
           {
+            "link": "#",
             "image_scr": "#",
             "image_alt": "Phantom Console",
             "label": "New",
